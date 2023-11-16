@@ -1,0 +1,34 @@
+.container-section-icon {
+    --transition-icon: 0.1s ease-in-out;
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
+
+    .path {
+        transition: var(--transition-icon);
+
+        &.primary {
+            fill: var(--primary-color);
+        }
+
+        &.secondary {
+            fill: var(--secondary-color);
+        }
+    }
+
+    &:hover {
+        .path {
+            transition: var(--transition-icon);
+
+            &.primary {
+                fill: var(--primary-color);
+                opacity: 0.7;
+            }
+
+            &.secondary {
+                fill: var(--primary-color);
+                opacity: 0.7;
+            }
+        }
+    }
+}
