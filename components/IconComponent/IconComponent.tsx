@@ -25,18 +25,19 @@ const IconGenerate = ({ fill, viewBox, path }: { fill: string, viewBox: string, 
     )
 }
 
-export const IconComponent = ({ iconData }: IconInterface) => {
+export const IconComponent = ({ iconData, size, isClickable }: IconInterface) => {
     return (
-        <div className={styles["container-section-icon"]}>
+        <div onClick={isClickable} className={`${styles["container-section-icon"]} ${styles[size]}`}>
             {IconGenerate({ fill: iconData.fill, viewBox: iconData.viewBox, path: iconData.path })}
         </div>
     )
 }
 
-export const LinkIconComponent = ({ iconData }: LinkIconInterface) => {
+export const LinkIconComponent = ({ iconData, size }: LinkIconInterface) => {
     return (
         <Link
-            className={styles["container-section-icon"]}
+            className={`${styles["container-section-icon"]} ${styles[size]} 
+            ${iconData.onlyDesktop && styles["hidden-mobile"]} ${iconData.onlyMobile && styles["hidden-desktop"]}`}
             rel="noopener noreferrer"
             target="_blank"
             aria-label={`Ir a ${iconData.name}`}

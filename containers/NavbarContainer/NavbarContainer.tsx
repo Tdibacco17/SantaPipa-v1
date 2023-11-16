@@ -1,7 +1,7 @@
 'use client'
 import NavbarComponent from "@/components/NavbarComponent/NavbarComponent";
 import { useScrollPosition } from "@/utils/scroll/useScrollPosition";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function NavbarContainer({ navType }: { navType: "primary" | "secondary" }) {
     const [showMenu, setShowMenu] = useState<boolean>(false)

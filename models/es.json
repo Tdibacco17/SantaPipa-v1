@@ -5,18 +5,15 @@
         "navigation": {
             "campaign": {
                 "title": "Nosotros",
-                "link": "/about",
-                "width": "about"
+                "link": "/about"
             },
             "contact": {
                 "title": "Contacto",
-                "link": "/contact",
-                "width": "contact"
+                "link": "/contact"
             },
             "products": {
                 "title": "Productos",
-                "link": "/products",
-                "width": "products"
+                "link": "/products"
             }
         },
         "burgerIcon": {
@@ -47,7 +44,8 @@
                 "link": "https://web.whatsapp.com/send?phone=5491154587688",
                 "viewBox": "0 0 28 28",
                 "isLink": true,
-                "fill": "primary"
+                "fill": "primary",
+                "onlyDesktop": true
             },
             "whatsappMobile": {
                 "name": "whatsapp",
@@ -57,7 +55,8 @@
                 "link": "https://wa.me/5491154587688",
                 "viewBox": "0 0 28 28",
                 "isLink": true,
-                "fill": "primary"
+                "fill": "primary",
+                "onlyMobile": true
             },
             "tikTok": {
                 "name": "tiktok",

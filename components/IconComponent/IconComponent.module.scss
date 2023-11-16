@@ -1,8 +1,35 @@
 .container-section-icon {
     --transition-icon: 0.1s ease-in-out;
     cursor: pointer;
-    height: 2.5rem;
-    width: 2.5rem;
+
+    &.small {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    &.medium {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    &.big {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    &.hidden-mobile {
+        @media (max-width:442px) {
+            display: none;
+        }
+    }
+
+    &.hidden-desktop {
+        display: none;
+
+        @media (max-width:442px) {
+            display: flex;
+        }
+    }
 
     .path {
         transition: var(--transition-icon);
@@ -20,15 +47,13 @@
         .path {
             transition: var(--transition-icon);
 
-            &.primary {
-                fill: var(--primary-color);
-                opacity: 0.7;
-            }
+            // &.primary {
+            //     fill: var(--hover);
+            // }
 
-            &.secondary {
-                fill: var(--primary-color);
-                opacity: 0.7;
-            }
+            // &.secondary {
+            //     fill: var(--hover);
+            // }
         }
     }
 }

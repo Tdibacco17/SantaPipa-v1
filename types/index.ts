@@ -1,9 +1,12 @@
 import { ProductInterface } from "./productsType"
 export interface LinkIconInterface {
     iconData: LinkIconProps
+    size: "medium" | "big" | "small"
 }
 export interface IconInterface {
-    iconData: IconProps
+    iconData: IconProps,
+    size: "medium" | "big" | "small",
+    isClickable: () => void
 }
 export interface IconProps {
     fill: string, //primary | secondary
@@ -13,14 +16,14 @@ export interface IconProps {
 }
 export interface LinkIconProps extends IconProps {
     link: string,
-    name: string
+    name: string,
+    onlyDesktop?: boolean,
+    onlyMobile?: boolean,
 }
-
 
 export interface NavigationProps {
     title: string,
-    url: string,
-    width: string
+    link: string
 }
 export interface ImgDataInterface {
     imgSrc: string,
