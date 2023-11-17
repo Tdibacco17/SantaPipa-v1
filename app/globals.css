@@ -15,10 +15,11 @@
   /*14px*/
   --size-small: 0.875rem;
 
-  --primary-color: #FFFFFF;
-  --secondary-color: #000000;
-  --hover: rgb(255, 255, 255, 0.7);
-  --shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  --primary-color: rgb(255, 255, 255);
+  --primary-hover: rgb(255, 255, 255, 0.7);
+  --secondary-color: rgb(0, 0, 0);
+  --secondary-hover: rgb(0, 0, 0, 0.7);
+  --bg-overlay: rgba(0, 0, 0, 0.4);
 }
 
 * {
@@ -45,6 +46,11 @@ body {
   color: var(--color-color);
   position: relative;
   padding-bottom: 6rem;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
 }
 
 a {

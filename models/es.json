@@ -22,7 +22,8 @@
             ],
             "viewBox": "0 0 24 24",
             "isLink": false,
-            "fill": "secondary"
+            "fill": "primary",
+            "hover": false
         },
         "closeIcon": {
             "path": [
@@ -30,7 +31,8 @@
             ],
             "viewBox": "0 0 512 512",
             "isLink": false,
-            "fill": "secondary"
+            "fill": "primary",
+            "hover": false
         }
     },
     "FooterComponent": {
@@ -45,7 +47,8 @@
                 "viewBox": "0 0 28 28",
                 "isLink": true,
                 "fill": "primary",
-                "onlyDesktop": true
+                "onlyDesktop": true,
+                "hover": true
             },
             "whatsappMobile": {
                 "name": "whatsapp",
@@ -56,7 +59,8 @@
                 "viewBox": "0 0 28 28",
                 "isLink": true,
                 "fill": "primary",
-                "onlyMobile": true
+                "onlyMobile": true,
+                "hover": true
             },
             "tikTok": {
                 "name": "tiktok",
@@ -66,7 +70,8 @@
                 "link": "https://www.tiktok.com/@santapipa_",
                 "viewBox": "0 0 24 24",
                 "isLink": true,
-                "fill": "primary"
+                "fill": "primary",
+                "hover": true
             },
             "instagram": {
                 "name": "instagram",
@@ -78,7 +83,8 @@
                 "link": "https://www.tiktok.com/@santapipa_",
                 "viewBox": "0 0 16 16",
                 "isLink": true,
-                "fill": "primary"
+                "fill": "primary",
+                "hover": true
             }
         }
     },
@@ -92,6 +98,14 @@
             "viewBox": "0 0 34 27",
             "isLink": true,
             "fill": "secondary"
+        }
+    },
+    "homePage": {
+        "bannerImg": {
+            "imgSrc": "/assets/img/homePage/sunshine.webp",
+            "imgAlt": "Banner Img",
+            "imgBlur": "data:image/svg+xml;base64,CiAgICAgICAgPHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA4IDUnPgogICAgICAgIDxmaWx0ZXIgaWQ9J2InIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0nc1JHQic+CiAgICAgICAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249JzEnLz4KICAgICAgICA8L2ZpbHRlcj4KICAgICAgICAgICAgPGltYWdlIHByZXNlcnZlQXNwZWN0UmF0aW89J25vbmUnIGZpbHRlcj0ndXJsKCNiKScgeD0nMCcgeT0nMCcgaGVpZ2h0PScxMDAlJyB3aWR0aD0nMTAwJScgaHJlZj0nZGF0YTppbWFnZS93ZWJwO2Jhc2U2NCwvOWovNEFBUVNrWkpSZ0FCQVFBQUFRQUJBQUQvMndDRUFBRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBZi9DQUJFSUFBd0FFQU1CRVFBQ0VRRURFUUgveEFBckFBQURBUUFBQUFBQUFBQUFBQUFBQUFBSENBa0xBUUVCQVFBQUFBQUFBQUFBQUFBQUFBQUhCZ1gvMmdBTUF3RUFBaEFERUFBQUFIS05VVzVzcFlaRUNnTUhQUHF2LzhRQUpCQUFBZ0lEQUFFREJRRUFBQUFBQUFBQUF3UUZCZ0VDQndnVUZTTUFDUkVTRXlYLzJnQUlBUUVBQVQ4QThOUHZqWEM1VTJhNmI1TDhyNE40ODh1UWF3alcrdTZlUjhYS3d0b2xjUHRJU2dTMDJTcWJ0eHJZUWFJN25XWi8wWTQyK2pDK2pZOVJCS3h6dnpSNHgzeWhJWFhpbHg1MTFhdFNYclNlL1ZHMHBXQ01jWlNkWWp6bVhHdmt1NndORHJiNmZNRVk5OTl2N2d4a1pSNzdXM0hyUGY1OWpBZHBlT2ZoVmwzeEpvck5mcExKV0Zock9XRlZRbjAvR3lRaGdDQWdWUWkzTnBxdjh1MmZybC9ZK204NmhlZWRVcEYzdGRVdWhKZVJnbVpTc1dpeVZjcnNkSHRxUm9GM1RWcVdpSEdRYkpnRm93bVJ2TWV5VVFXektidUxMSEQvQVAvRUFCOFJBUUVCQUFJQ0F3RUJBQUFBQUFBQUFBSUJBeEVTQkFVaElqRVRGUC9hQUFnQkFnRUJQd0QySmNBbmpWNitTZ2VoL2trTy93Q1grYXp0N3d1ZEszbGtueE9CZWZpKzA5eDNmai81c1BHMnhURzZzMnFUS3ArbWM0UWhud3haeWRZdno4bnIrV0ZIYXByVTJieDFxRkFGNlNRV2treVd5MzZubS9VOGVaNnZ3bjVXbWR4bjN5MTF1cytOelE4OVRNOXA5OHozaDdRVTFrek4xWnBsL3dEL3hBQWhFUUFEQUFJQ0FnSURBQUFBQUFBQUFBQUJBZ01FRVFVaEVoTUFJaFF4TXYvYUFBZ0JBd0VCUHdEZ294b1hiS0N6aDdtUng3RVVnRUo0OVZaWER2c2xaQnlvSFhucy9Cd1BEa0xrVXlyWldKWVRmRlFMRlZFMlFNcGVwSlNwT3lVZGVqTXIvV3dUbDVORUxNdmlyU2RKcXdYN2VOVm96N1k3UDdHeDJBTnQxOW0zeG5OY2llUGpiOGc5WkVNYjBFQnNacDBXa1hMd2JjNk1VVTZMaGdyc2FLQTRSay8vMlE9PScvPgogICAgICAgIDwvc3ZnPgogICAg",
+            "objPosition": "50% 50%"
         }
     }
 }

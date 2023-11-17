@@ -1,5 +1,4 @@
 .container-section-icon {
-    --transition-icon: 0.1s ease-in-out;
     cursor: pointer;
 
     &.small {
@@ -32,8 +31,6 @@
     }
 
     .path {
-        transition: var(--transition-icon);
-
         &.primary {
             fill: var(--primary-color);
         }
@@ -41,19 +38,23 @@
         &.secondary {
             fill: var(--secondary-color);
         }
+
+        &.isNavTransition {
+            transition: 0.25s ease-in-out;
+        }
     }
 
-    &:hover {
-        .path {
-            transition: var(--transition-icon);
+    &.hover {
+        &:hover {
+            .path {
+                &.primary {
+                    fill: var(--primary-hover);
+                }
 
-            // &.primary {
-            //     fill: var(--hover);
-            // }
-
-            // &.secondary {
-            //     fill: var(--hover);
-            // }
+                &.secondary {
+                    fill: var(--secondary-hover);
+                }
+            }
         }
     }
 }

@@ -1,18 +1,20 @@
 import { ProductInterface } from "./productsType"
 export interface LinkIconInterface {
     iconData: LinkIconProps
-    size: "medium" | "big" | "small"
+    size: "medium" | "big" | "small",
 }
 export interface IconInterface {
     iconData: IconProps,
     size: "medium" | "big" | "small",
-    isClickable: () => void
+    isClickable: () => void,
+    customNavFill?: string 
 }
 export interface IconProps {
-    fill: string, //primary | secondary
+    fill: string,
     viewBox: string
     path: string[],
-    isLink: boolean
+    isLink: boolean,
+    hover: boolean
 }
 export interface LinkIconProps extends IconProps {
     link: string,
@@ -29,7 +31,7 @@ export interface ImgDataInterface {
     imgSrc: string,
     imgAlt: string
     imgBlur: string
-    objPosition?: string
+    objPosition: string
 }
 
 export interface CarouselProps {
