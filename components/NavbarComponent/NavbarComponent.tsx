@@ -20,8 +20,8 @@ export default function NavbarComponent({
             <Link onClick={() => handleShowMenu(true)} href={data.NavbarComponent.link} className={styles["text"]}>{data.NavbarComponent.title}</Link>
             <nav className={styles["container-navigation-titles"]}>
                 {
-                    Object.values(data.NavbarComponent.navigation).map((navItem: NavigationProps) => {
-                        return <Link href={navItem.link} className={styles["text"]}>{navItem.title}</Link>
+                    Object.values(data.NavbarComponent.navigation).map((navItem: NavigationProps, index: number) => {
+                        return <Link key={index} href={navItem.link} className={styles["text"]}>{navItem.title}</Link>
                     })
                 }
             </nav>
