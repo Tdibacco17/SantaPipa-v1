@@ -28,9 +28,9 @@ export default function NavbarComponent({
                 </nav>
                 <div className={styles["container-mobile-icon"]}>
                     {!showMenu ?
-                        <IconComponent isClickable={() => handleShowMenu()} iconData={data.NavbarComponent.burgerIcon} size='small'
+                        <IconComponent isClickable={() => handleShowMenu()} iconData={data.NavbarComponent.burgerIcon} size='medium'
                             customNavFill={isAtTop ? "primary" : "secondary"} />
-                        : <IconComponent isClickable={() => handleShowMenu()} iconData={data.NavbarComponent.closeIcon} size='small'
+                        : <IconComponent isClickable={() => handleShowMenu()} iconData={data.NavbarComponent.closeIcon} size='medium'
                             customNavFill={isAtTop ? "primary" : "secondary"} />}
                 </div>
             </div>
