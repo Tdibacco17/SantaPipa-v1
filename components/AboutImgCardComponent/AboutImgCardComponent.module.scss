@@ -1,0 +1,43 @@
+.container-outer-about-img {
+    --about-width: 16rem;
+    --about-height: 24rem;
+    position: relative;
+    width: var(--about-width);
+    min-width: var(--about-width);
+    max-width: var(--about-width);
+    height: var(--about-height);
+    min-height: var(--about-height);
+    max-height: var(--about-height);
+    overflow: hidden;
+    user-select: none;
+
+    * {
+        pointer-events: none;
+    }
+
+    @media (max-width:992px) {
+        --about-width: 22.25rem;
+        --about-height: 35rem;
+    }
+
+    @media (max-width:768px) {
+        --about-width: calc(45vw - 1rem);
+    }
+
+    @media (max-width: 600px) {
+        --about-height: 25rem;
+    }
+
+    @media (max-width: 442px) {
+        --about-height: 20rem;
+        --about-width: 45vw;
+    }
+
+    @media (max-width: 350px) {
+        --about-height: 15rem;
+    }
+
+    .container-inner-about-img {
+        object-fit: cover;
+    }
+}

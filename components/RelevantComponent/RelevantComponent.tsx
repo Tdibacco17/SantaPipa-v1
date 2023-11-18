@@ -16,7 +16,10 @@ export default function RelevantComponent() {
                 </div>
                 <div className={styles["container-info"]}>
                     <div>
-                        <p className={styles["small"]}>{data.homePage.relevant.smallTitle}</p>
+                        <p className={styles["small"]}>
+                            <span className={styles["line-decoration"]} />
+                            {data.homePage.relevant.smallTitle}
+                        </p>
                         <p className={styles["title"]}>{data.homePage.relevant.title}</p>
                     </div>
                     {data.homePage.relevant.description.map((item: string, index: number) => {

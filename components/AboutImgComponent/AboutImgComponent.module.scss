@@ -1,13 +1,20 @@
-.container-section-relevant {
+.container-section-about {
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--secondary-color);
+    padding: 4rem 0;
+
+    @media (max-width:442px) {
+        padding: 2rem 0
+    }
 
     .wrapper {
         width: var(--max-width);
         max-width: var(--max-width);
         display: flex;
+        justify-content: space-between;
         gap: 4rem;
         padding: 0;
 
@@ -23,14 +30,14 @@
         }
 
         @media (max-width:992px) {
-            flex-direction: column-reverse;
             width: var(--max-width);
             max-width: var(--max-width);
-            gap: 4rem;
             padding: 0;
+            flex-direction: column;
+            gap: 4rem;
         }
 
-        .container-twoImages {
+        .container-images {
             display: flex;
             gap: 4rem;
 
@@ -46,36 +53,18 @@
                 justify-content: center;
             }
 
-            @media (max-width:768px) {
-                flex-direction: column;
-                gap: 2rem;
-            }
-
-            .space {
-                padding-top: 8rem;
-
-                @media (max-width:768px) {
-                    padding-top: revert;
-                }
+            @media (max-width:442px) {
+                gap: 1rem;
             }
         }
 
         .container-info {
-            padding-top: 7.7rem;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             justify-content: flex-start;
+            color: var(--primary-color);
             gap: 2rem;
-
-            @media (max-width:1200px) {
-                gap: 1.5rem;
-            }
-
-            @media (max-width:992px) {
-                padding-top: revert;
-                gap: 2rem;
-            }
 
             .small {
                 display: flex;
@@ -87,7 +76,7 @@
                 .line-decoration {
                     width: 1.3rem;
                     height: 1px;
-                    background-color: var(--secondary-color);
+                    background-color: var(--primary-color);
                 }
             }
 
@@ -95,12 +84,16 @@
                 font-weight: var(--weight-bold);
                 font-size: var(--size-giant);
                 text-transform: uppercase;
+
+                @media (max-width:442px) {
+                    display: flex;
+                    flex-direction: column;
+                }
             }
 
             .description {
-                font-weight: var(--weight-medium);
+                font-weight: var(--weight-regular);
                 font-size: var(--size-xsmall);
-                color: var(--tertiary-color);
             }
         }
     }
