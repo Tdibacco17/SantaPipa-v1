@@ -7,12 +7,13 @@ export default function BannerImgComponent() {
         <section className={styles["container-section-banner"]}>
             <div className={styles["container-outer-banner-img"]}>
                 <Image
-                    src={data.homePage.bannerImg.imgSrc}
-                    alt={data.homePage.bannerImg.imgAlt}
+                    src={data.homePage.bannerImg.image.imgSrc}
+                    alt={data.homePage.bannerImg.image.imgAlt}
                     fill
+                    priority
                     placeholder='blur'
-                    blurDataURL={data.homePage.bannerImg.imgBlur}
-                    style={{ objectPosition: data.homePage.bannerImg.objPosition }}
+                    blurDataURL={data.homePage.bannerImg.image.imgBlur}
+                    style={{ objectPosition: data.homePage.bannerImg.image.objPosition }}
                     className={styles["container-inner-banner-img"]}
                 />
             </div>
