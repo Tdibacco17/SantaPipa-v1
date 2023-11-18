@@ -6,10 +6,6 @@
     background-color: var(--secondary-color);
     padding: 4rem 0;
 
-    @media (max-width:442px) {
-        padding: 2rem 0
-    }
-
     .wrapper {
         width: var(--max-width);
         max-width: var(--max-width);
