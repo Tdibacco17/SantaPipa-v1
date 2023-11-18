@@ -1,11 +1,12 @@
-.container-section-banner {
+.container-section-contact {
     --banner-width: 100vw;
-    --banner-height: 100svh;
+    --banner-height: 24rem;
     position: relative;
     top: 0;
     left: 0;
 
-    .container-outer-banner-img {
+    .container-outer-contact-img {
+        position: relative;
         position: relative;
         width: var(--banner-width);
         min-width: var(--banner-width);
@@ -20,12 +21,12 @@
             pointer-events: none;
         }
 
-        .container-inner-banner-img {
+        .container-inner-contact-img {
             object-fit: cover;
         }
     }
 
-    .container-banner-titles {
+    .container-contact-titles {
         position: absolute;
         top: 0;
         left: 0;
@@ -36,34 +37,29 @@
         align-items: center;
 
         .wrapper {
-            width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             justify-content: flex-start;
-            padding: 0 2rem;
+            gap: 2rem;
+            color: var(--primary-color);
+            text-align: center;
+            max-width: 50rem;
+            overflow: hidden;
 
-            @media (max-width:768px) {
-                width: var(--max-width);
+            @media (max-width:992px) {
                 max-width: var(--max-width);
-                padding: 0;
             }
 
-            color: var(--primary-color);
-            font-weight: var(--weight-medium);
-            font-size: var(--size-xsmall);
-
-            .slogan {
+            .title {
                 font-weight: var(--weight-bold);
-                font-size: var(--size-giant);
+                font-size: var(--size-xbig);
                 text-transform: uppercase;
-                padding-bottom: 2rem;
+            }
 
-                @media (max-width:442px) {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                }
+            .description {
+                font-weight: var(--weight-medium);
+                font-size: var(--size-xsmall);
             }
         }
     }

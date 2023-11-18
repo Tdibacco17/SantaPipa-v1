@@ -17,7 +17,7 @@ export default function BannerImgComponent() {
                     className={styles["container-inner-banner-img"]}
                 />
             </div>
-            <div className={styles["overlay-banner-img"]} />
+            <div className='overlay-img' />
             <div className={styles["container-banner-titles"]}>
                 <div className={styles["wrapper"]}>
                     <p>{data.homePage.bannerImg.smallTitle}</p>
