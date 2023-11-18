@@ -24,7 +24,8 @@
   --primary-color: rgb(255, 255, 255);
   --primary-hover: rgb(255, 255, 255, 0.7);
   --secondary-color: rgb(0, 0, 0);
-  --secondary-hover: rgb(0, 0, 0, 0.7);
+  --secondary-hover: rgb(0, 0, 0, 0.5);
+  --tertiary-color: rgb(80, 80, 80);
   --bg-overlay: rgba(0, 0, 0, 0.4);
 }
 
@@ -62,6 +63,32 @@ body::-webkit-scrollbar {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.btn-primary {
+  padding: 1rem 1.75rem;
+  border: 1px solid var(--primary-hover);
+  text-transform: uppercase;
+  font-size: var(--size-small);
+  font-weight: var(--weight-medium);
+  color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  border: 1px solid var(--primary-color);
+}
+
+.btn-secondary {
+  padding: 1rem 1.75rem;
+  border: 1px solid var(--secondary-hover);
+  text-transform: uppercase;
+  font-size: var(--size-small);
+  font-weight: var(--weight-medium);
+  color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  border: 1px solid var(--secondary-color);
 }
 
 @media (max-width:1400px) {

@@ -1,0 +1,99 @@
+.container-section-relevant {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .wrapper {
+        width: var(--max-width);
+        max-width: var(--max-width);
+        display: flex;
+        gap: 4rem;
+        padding: 0;
+        overflow: hidden;
+
+        @media (max-width:1400px) {
+            gap: 3rem;
+        }
+
+        @media (max-width:1200px) {
+            width: 100vw;
+            max-width: 100vw;
+            padding: 0 2rem;
+            gap: 2rem;
+        }
+
+        @media (max-width:992px) {
+            flex-direction: column-reverse;
+            width: var(--max-width);
+            max-width: var(--max-width);
+            gap: 4rem;
+            padding: 0;
+        }
+
+        .container-twoImages {
+            display: flex;
+            gap: 4rem;
+
+            @media (max-width:1400px) {
+                gap: 3rem;
+            }
+
+            @media (max-width:1200px) {
+                gap: 2rem;
+            }
+
+            @media (max-width:992px) {
+                justify-content: center;
+            }
+
+            @media (max-width:768px) {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .space {
+                padding-top: 8rem;
+
+                @media (max-width:768px) {
+                    padding-top: revert;
+                }
+            }
+        }
+
+        .container-info {
+            padding-top: 7.7rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 2rem;
+
+            @media (max-width:1200px) {
+                gap: 1.5rem;
+            }
+
+            @media (max-width:992px) {
+                padding-top: revert;
+                gap: 2rem;
+            }
+
+            .small {
+                font-size: var(--size-xsmall);
+                font-weight: var(--weight-medium);
+            }
+
+            .title {
+                font-weight: var(--weight-bold);
+                font-size: var(--size-giant);
+                text-transform: uppercase;
+            }
+
+            .description {
+                font-weight: var(--weight-medium);
+                font-size: var(--size-xsmall);
+                color: var(--tertiary-color);
+            }
+        }
+    }
+}

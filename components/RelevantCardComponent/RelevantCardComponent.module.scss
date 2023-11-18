@@ -1,0 +1,42 @@
+.container-outer-relevant-img {
+    --relevant-width: 20rem;
+    --relevant-height: 35rem;
+    position: relative;
+    user-select: none;
+    height: var(--relevant-height);
+    min-height: var(--relevant-height);
+    max-height: var(--relevant-height);
+    width: var(--relevant-width);
+    min-width: var(--relevant-width);
+    max-width: var(--relevant-width);
+    overflow: hidden;
+
+    * {
+        pointer-events: none;
+    }
+
+    @media (max-width:1200px) {
+        --relevant-width: 18rem;
+    }
+
+    @media (max-width:992px) {
+        --relevant-width: 22rem;
+    }
+
+    @media (max-width:768px) {
+        --relevant-width: 90vw;
+        --relevant-height: 60rem;
+    }
+
+    @media (max-width:500px) {
+        --relevant-height: 45rem;
+    }
+
+    @media (max-width:350px) {
+        --relevant-height: 35rem;
+    }
+
+    .container-inner-relevant-img {
+        object-fit: cover;
+    }
+}

@@ -28,7 +28,7 @@ export default function BannerImgComponent() {
                             })
                         }
                     </h1>
-                    <Link href={data.homePage.bannerImg.button.link} className={styles["btn"]}>
+                    <Link href={data.homePage.bannerImg.button.link} className='btn-primary'>
                         {data.homePage.bannerImg.button.title}
                     </Link>
                 </div>
