@@ -1,0 +1,30 @@
+.container-product-card {
+    --product-height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:hover {
+        .container-outer-product-img .container-inner-product-img {
+            opacity: 1;
+        }
+    }
+
+    .container-outer-product-img {
+        position: relative;
+        height: var(--product-height);
+        min-height: var(--product-height);
+        max-height: var(--product-height);
+        overflow: hidden;
+        user-select: none;
+
+        * {
+            pointer-events: none;
+        }
+
+        .container-inner-product-img {
+            object-fit: cover;
+            opacity: 0.85;
+        }
+    }
+}

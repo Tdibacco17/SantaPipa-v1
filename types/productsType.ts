@@ -11,13 +11,13 @@ export interface ProductsDataInterface {
 export interface ProductInterface {
     productSlug: string,
     title: string,
+    date: string,
     price: string,
     offerPrice: string,
-    offerText: string[]
     image: ImgDataInterface,
-    details: {
-        imagesData: ImgDataInterface[]
-        measures: string,
-        description: string[],
-    }
+    // details: {
+    // imagesData: ImgDataInterface[]
+    // measures: string,
+    // description: string[],
+    // }
 }
