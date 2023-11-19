@@ -170,6 +170,17 @@
                 "title": "Conocenos"
             }
         },
+        "outStanding": {
+            "smallTitle": "Colección 2024",
+            "title": [
+                "Productos ",
+                "Destacados"
+            ],
+            "button": {
+                "link": "/products",
+                "title": "Ver Productos"
+            }
+        },
         "contact": {
             "image": {
                 "imgSrc": "/assets/img/homePage/contact/palms.webp",

@@ -11,10 +11,10 @@ export interface ProductsDataInterface {
 export interface ProductInterface {
     productSlug: string,
     title: string,
-    date: string,
     price: string,
     offerPrice: string,
     image: ImgDataInterface,
+    isNewIn: boolean
     // details: {
     // imagesData: ImgDataInterface[]
     // measures: string,

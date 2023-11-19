@@ -6,7 +6,7 @@ const productsData: ProductsDataInterface = {
         title: "Vestido Amelia",
         price: "$65.000",
         offerPrice: "$55.000",
-        date: "Noviembre 2023",
+        isNewIn: true,
         image: {
             imgSrc: "/assets/img/homePage/outStanding/chica-azul-1.webp",
             imgAlt: "Vestido Amelia Img",
@@ -32,7 +32,7 @@ const productsData: ProductsDataInterface = {
         title: "Vestido siena",
         price: "$50.000",
         offerPrice: "$55.000",
-        date: "Noviembre 2023",
+        isNewIn: true,
         image: {
             "imgSrc": "/assets/img/homePage/outStanding/chica-negro-1.webp",
             "imgAlt": "Vestido siena Img",
@@ -59,7 +59,7 @@ const productsData: ProductsDataInterface = {
         title: "Top Antonia",
         price: "$50.000",
         offerPrice: "$25.000",
-        date: "Noviembre 2023",
+        isNewIn: true,
         image: {
             imgSrc: "/assets/img/homePage/outStanding/chica-rosa-1.webp",
             imgAlt: "Top Antonia Img",
@@ -86,7 +86,7 @@ const productsData: ProductsDataInterface = {
         title: "Pollera antonia",
         price: "$50.000",
         offerPrice: "$35.000",
-        date: "Noviembre 2023",
+        isNewIn: true,
         image: {
             imgSrc: "/assets/img/homePage/outStanding/chica-azul-1.webp",
             imgAlt: "Pollera antonia Img",
@@ -113,7 +113,7 @@ const productsData: ProductsDataInterface = {
         title: "Top Pipa",
         price: "$50.000",
         offerPrice: "$35.000",
-        date: "Noviembre 2023",
+        isNewIn: false,
         image: {
             "imgSrc": "/assets/img/homePage/outStanding/chica-negro-1.webp",
             "imgAlt": "Top Pipa Img",
@@ -140,7 +140,7 @@ const productsData: ProductsDataInterface = {
         title: "Vestido Santa Lucia",
         price: "$50.000",
         offerPrice: "$75.000",
-        date: "Noviembre 2023",
+        isNewIn: true,
         image: {
             imgSrc: "/assets/img/homePage/outStanding/chica-rosa-1.webp",
             imgAlt: "Vestido Santa Lucia Img",

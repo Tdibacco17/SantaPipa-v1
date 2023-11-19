@@ -20,10 +20,21 @@ export default function ProductCardComponent({
                     style={{ objectPosition: productData.image.objPosition }}
                     className={styles["container-inner-product-img"]}
                 />
+                {productData.image.hoverImg &&
+                    <Image
+                        src={productData.image.hoverImg.imgSrc}
+                        alt={productData.image.hoverImg.imgAlt}
+                        fill
+                        priority
+                        placeholder='blur'
+                        blurDataURL={productData.image.hoverImg.imgBlur}
+                        style={{ objectPosition: productData.image.hoverImg.objPosition }}
+                        className={`${styles["container-inner-product-img"]} ${styles["hover"]}`}
+                    />}
+                {productData.isNewIn && <div className={styles["position-new-in"]}> <p className={styles["new-in"]}>NEW IN</p> </div>}
             </div>
             <div className={styles["container-footer-card"]}>
                 <p className={styles["title"]}>{productData.title}</p>
-                <p className={styles["date"]}>{`${productData.date}`}</p>
                 <p className={styles["price"]}>{`${productData.offerPrice}`}</p>
             </div>
         </Link>

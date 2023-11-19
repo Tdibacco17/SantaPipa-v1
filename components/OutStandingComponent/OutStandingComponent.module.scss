@@ -7,12 +7,55 @@
     .wrapper {
         width: var(--max-width);
         max-width: var(--max-width);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
 
         @media (max-width:1200px) {
             width: 100vw;
             max-width: 100vw;
             padding: 0 2rem;
-            gap: 2rem;
+        }
+
+        @media (max-width:768px) {
+            width: var(--max-width);
+            max-width: var(--max-width);
+            padding: 0;
+        }
+
+        .container-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            color: var(--secondary-color);
+            width: 100%;
+
+            .small {
+                display: flex;
+                align-items: center;
+                gap: 0.35rem;
+                font-size: var(--size-xsmall);
+                font-weight: var(--weight-medium);
+
+                .line-decoration {
+                    width: 1.3rem;
+                    height: 1px;
+                    background-color: var(--secondary-color);
+                }
+            }
+
+            .title {
+                font-weight: var(--weight-bold);
+                font-size: var(--size-giant);
+                text-transform: uppercase;
+
+                @media (max-width:442px) {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
         }
 
         .container-carousel-desktop {
@@ -21,6 +64,7 @@
             padding: 0;
             gap: 4rem;
             overflow: hidden;
+            width: 100%;
 
             @media (max-width:1400px) {
                 gap: 3rem;
@@ -40,6 +84,7 @@
 
             @media (max-width:768px) {
                 display: flex;
+                width: 100%;
             }
         }
     }
