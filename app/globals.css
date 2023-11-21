@@ -122,6 +122,10 @@ a {
   :root {
     --max-width: 700px;
   }
+
+  body {
+    touch-action: auto;
+  }
 }
 
 @media (max-width:768px) {

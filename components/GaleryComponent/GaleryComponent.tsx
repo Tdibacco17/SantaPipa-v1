@@ -17,9 +17,7 @@ export default function GaleryComponent({
     const [thumbsSwiper, setThumbsSwiper] = useState<any | null>(null);
     return (
         <>
-
             <Swiper
-                zoom={{ toggle: false }}
                 loop
                 spaceBetween={0}
                 thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
@@ -33,7 +31,6 @@ export default function GaleryComponent({
                 })}
             </Swiper>
             <Swiper
-                zoom={{ toggle: false }}
                 onSwiper={setThumbsSwiper}
                 spaceBetween={16}//16px = 1rem
                 slidesPerView={4}

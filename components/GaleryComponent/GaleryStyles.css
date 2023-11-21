@@ -1,7 +1,12 @@
+@media (max-width:992px) {
+    .swiper {
+        touch-action: auto !important;
+        user-select: auto !important;
+    }
+}
+
 .swiper-slide {
     cursor: pointer;
-    touch-action: pan-x pan-y;
-    user-select: auto;
 }
 
 .first-img-galery {
