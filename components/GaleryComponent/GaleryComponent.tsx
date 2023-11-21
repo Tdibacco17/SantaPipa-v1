@@ -15,6 +15,7 @@ export default function GaleryComponent({
     imagesData: ImgDataInterface[]
 }) {
     const [thumbsSwiper, setThumbsSwiper] = useState<any | null>(null);
+
     return (
         <>
             <Swiper
