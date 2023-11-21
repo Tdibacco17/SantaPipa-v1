@@ -22,7 +22,7 @@ export default function GaleryComponent({
                 loop
                 spaceBetween={0}
                 thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
-                modules={[Navigation, Thumbs]}
+                modules={[FreeMode, Navigation, Thumbs]}
                 className="first-img-galery"
             >
                 {imagesData.map((imageData: ImgDataInterface, index: number) => {
@@ -36,7 +36,7 @@ export default function GaleryComponent({
                 spaceBetween={16}//16px = 1rem
                 slidesPerView={4}
                 watchSlidesProgress={true}
-                modules={[Navigation, Thumbs]}
+                modules={[FreeMode, Navigation, Thumbs]}
                 className="second-img-galery"
             >
                 {imagesData.map((imageData: ImgDataInterface, index: number) => {

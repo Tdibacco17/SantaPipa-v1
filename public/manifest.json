@@ -12,8 +12,8 @@
     ],
     "start_url": "/",
     "display": "standalone",
-    "theme_color": "#000000",
-    "background_color": "#000000",
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
     "author": {
         "name": "Tomás Di Bacco",
         "url": "https://www.linkedin.com/in/tomas-di-bacco/"

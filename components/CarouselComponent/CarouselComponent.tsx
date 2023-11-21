@@ -1,7 +1,8 @@
 'use client'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation, FreeMode } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './CarouselStyles.css';
@@ -22,7 +23,7 @@ export default function CarouselComponent({
                 clickable: true,
             }}
             navigation={false}
-            modules={[Pagination, Navigation]}
+            modules={[FreeMode, Pagination, Navigation]}
             className="carousel-swiper"
         >
             {productData && productData.map((proudcData: ProductInterface, index: number) => {
