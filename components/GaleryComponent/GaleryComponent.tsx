@@ -22,7 +22,7 @@ export default function GaleryComponent({
                     <Swiper
                         loop
                         spaceBetween={0}
-                        thumbs={thumbsSwiper ? { swiper: thumbsSwiper } : undefined}
+                        thumbs={{ swiper: thumbsSwiper }}
                         modules={[Navigation, Thumbs]}
                         className="first-img-galery"
                     >
