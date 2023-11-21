@@ -5,6 +5,10 @@
     top: 0;
     left: 0;
 
+    // @media (max-width:442px) {
+    //     --banner-height: AJUSTAR
+    // }
+
     .container-outer-banner-img {
         position: relative;
         width: var(--banner-width);

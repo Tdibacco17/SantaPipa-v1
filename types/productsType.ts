@@ -15,9 +15,9 @@ export interface ProductInterface {
     offerPrice: string,
     image: ImgDataInterface,
     isNewIn: boolean
-    // details: {
-    // imagesData: ImgDataInterface[]
-    // measures: string,
-    // description: string[],
-    // }
+    details: {
+        imagesData: ImgDataInterface[]
+        // measures: string,
+        description: string[],
+    }
 }

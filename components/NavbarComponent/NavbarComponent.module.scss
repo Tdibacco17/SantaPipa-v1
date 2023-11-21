@@ -33,6 +33,12 @@
         }
     }
 
+    &.secondary {
+        //shadow & bg
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        background-color: var(--primary-color);
+    }
+
     .wrapper {
         width: 100vw;
         display: flex;
@@ -40,6 +46,11 @@
         justify-content: space-between;
         gap: 2rem;
         padding: 0 2rem;
+        color: var(--primary-color);
+
+        &.secondary {
+            color: var(--secondary-color);
+        }
 
         @media (max-width:768px) {
             width: var(--max-width);
@@ -50,19 +61,24 @@
         .logo-text {
             font-weight: var(--weight-medium);
             font-size: var(--size-xmedium);
-            color: var(--primary-color);
             transition: color 0.25s ease-in-out;
         }
 
         .text {
             font-weight: var(--weight-medium);
             font-size: var(--size-medium);
-            color: var(--primary-color);
             transition: color 0.25s ease-in-out;
             height: 1.15rem;
 
             &:hover {
                 border-bottom: 2px solid var(--primary-color);
+            }
+
+            &.secondary-color {
+
+                &:hover {
+                    border-bottom: 2px solid var(--secondary-color);
+                }
             }
         }
 

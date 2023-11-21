@@ -16,22 +16,24 @@ export default function NavbarComponent({
 }) {
 
     return (
-        <section className={`${styles["container-section-navbar"]} ${!isAtTop && styles["active"]}`}>
-            <div className={styles["wrapper"]}>
+        <section className={`${styles["container-section-navbar"]} ${navType === "primary" && !isAtTop && styles["active"]} ${navType === "secondary" && styles["secondary"]}`}>
+            <div className={`${styles["wrapper"]} ${navType === "secondary" && styles["secondary"]}`}>
                 <Link onClick={() => handleShowMenu(true)} href={data.NavbarComponent.link} className={styles["logo-text"]}>
                     {data.NavbarComponent.title}
                 </Link>
                 <nav className={styles["container-navigation-titles"]}>
                     {Object.values(data.NavbarComponent.navigation).map((navItem: NavigationProps, index: number) => {
-                        return <Link key={index} href={navItem.link} className={styles["text"]}>{navItem.title}</Link>
+                        return <Link key={index} href={navItem.link} className={`${styles["text"]} ${navType === "secondary" && styles["secondary-color"]}`}>
+                            {navItem.title}
+                        </Link>
                     })}
                 </nav>
                 <div className={styles["container-mobile-icon"]}>
                     {!showMenu ?
                         <IconComponent isClickable={() => handleShowMenu()} iconData={data.NavbarComponent.burgerIcon} size='medium'
-                            customNavFill={isAtTop ? "primary" : "secondary"} />
+                            customNavFill={navType === "primary" ? (isAtTop ? "primary" : "secondary") : "secondary"} />
                         : <IconComponent isClickable={() => handleShowMenu()} iconData={data.NavbarComponent.closeIcon} size='medium'
-                            customNavFill={isAtTop ? "primary" : "secondary"} />}
+                            customNavFill={navType === "primary" ? (isAtTop ? "primary" : "secondary") : "secondary"} />}
                 </div>
             </div>
         </section>

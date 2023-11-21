@@ -1,4 +1,5 @@
 'use client'
+import ProductDetailComponent from "@/components/ProductDetailComponent/ProductDetailComponent";
 import { ProductDetailContext } from "@/context/ProductDetailContextProvider";
 import productsData from "@/models/products";
 import { ProductsDataContextInterface } from "@/types/productsType";
@@ -14,5 +15,5 @@ export default function ProductDetailContainer({ params }: { params: { slug: str
                 handleProductDataChange(productsData[params.slug]);
         }
     }, [params.slug]);
-    return <></>
+    return <ProductDetailComponent />
 }
