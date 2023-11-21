@@ -5,15 +5,15 @@
 .first-img-galery {
     height: 100%;
     width: 100%;
-    z-index: 0;
+    z-index: 0 !important;
 }
 
 /*separador*/
 .second-img-galery {
     height: 100%;
     width: 100%;
-    padding: 1rem 0;
-    z-index: 0;
+    padding: 1rem 0 !important;
+    z-index: 0 !important;;
 }
 
 /*animacion*/
