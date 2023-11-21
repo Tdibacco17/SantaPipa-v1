@@ -23,7 +23,7 @@ export default function CarouselComponent({
             }}
             navigation={false}
             modules={[Pagination]}
-            className="mySwiper"
+            className="carousel-swiper"
         >
             {productData && productData.map((proudcData: ProductInterface, index: number) => {
                 return <SwiperSlide key={index}>

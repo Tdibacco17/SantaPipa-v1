@@ -2,14 +2,14 @@
     cursor: pointer;
 }
 
-.mySwiper2 {
+.first-img-galery {
     height: 100%;
     width: 100%;
     z-index: 0;
 }
 
 /*separador*/
-.mySwiper {
+.second-img-galery {
     height: 100%;
     width: 100%;
     padding: 1rem 0;
@@ -17,18 +17,18 @@
 }
 
 /*animacion*/
-/* .mySwiper .swiper-slide {
+.second-img-galery .swiper-slide {
     opacity: 0.4;
 }
 
-.mySwiper .swiper-slide:hover {
+.second-img-galery .swiper-slide:hover {
     opacity: 0.7;
 }
 
-.mySwiper .swiper-slide-thumb-active {
+.second-img-galery .swiper-slide-thumb-active {
     opacity: 1;
 }
 
-.mySwiper .swiper-slide-thumb-active:hover {
+.second-img-galery .swiper-slide-thumb-active:hover {
     opacity: 1;
-} */
+}
