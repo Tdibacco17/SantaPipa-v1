@@ -10,16 +10,15 @@
     }
 
     @media (max-width:500px) {
-        --product-height: 38rem;
-    }
-
-    @media (max-width:350px) {
         --product-height: 35rem;
     }
 
+    // @media (max-width:350px) {
+    //     --product-height: 35rem;
+    // }
+
     &:hover {
         .container-outer-product-img .container-inner-product-img {
-
             &.hover {
                 opacity: 1;
                 transition: opacity 0.15s ease-in-out;
