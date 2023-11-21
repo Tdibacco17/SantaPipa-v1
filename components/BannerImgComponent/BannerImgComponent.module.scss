@@ -5,9 +5,9 @@
     top: 0;
     left: 0;
 
-    // @media (max-width:442px) {
-    //     --banner-height: AJUSTAR
-    // }
+    @media (max-width:442px) {
+        --banner-height: 60rem
+    }
 
     .container-outer-banner-img {
         position: relative;

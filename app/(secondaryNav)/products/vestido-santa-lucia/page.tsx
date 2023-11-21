@@ -1,5 +1,5 @@
 import ProductDetailComponent from "@/components/ProductDetailComponent/ProductDetailComponent";
 import productsData from "@/models/products";
-export default function VestidoAmeliaPage(){
+export default function ProductDetailPage(){
     return <ProductDetailComponent productData={productsData["vestido-santa-lucia"]}/>
 }
