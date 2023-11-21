@@ -149,7 +149,7 @@ const productsData: ProductsDataInterface = {
         }
     },
     "blusa-pipa": {
-        productSlug: "top-pipa",
+        productSlug: "blusa-pipa",
         title: "Top Pipa",
         price: "$50.000",
         offerPrice: "$35.000",
