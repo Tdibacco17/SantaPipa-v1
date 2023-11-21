@@ -15,6 +15,7 @@ export default function CarouselComponent({
 }) {
     return (
         <Swiper
+            zoom={{ toggle: false }}
             slidesPerView={1}
             spaceBetween={0}
             loop={true}

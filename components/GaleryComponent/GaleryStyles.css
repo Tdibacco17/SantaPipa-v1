@@ -1,5 +1,7 @@
 .swiper-slide {
     cursor: pointer;
+    touch-action: pan-x pan-y;
+    user-select: auto;
 }
 
 .first-img-galery {
@@ -13,7 +15,8 @@
     height: 100%;
     width: 100%;
     padding: 1rem 0 !important;
-    z-index: 0 !important;;
+    z-index: 0 !important;
+    ;
 }
 
 /*animacion*/

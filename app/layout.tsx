@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   title: 'SANTA PIPA',
   description: 'Tienda de ropa',
   applicationName: 'Santa Pipa',
-  // viewport: 'width=device-width, initial-scale=1',
-  colorScheme: 'light',
-  themeColor: '#FFFFFF',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes',
+  colorScheme: 'dark',
+  themeColor: '#000000',
   authors: {
     name: 'Tomás Di Bacco',
     url: 'https://www.linkedin.com/in/tomas-di-bacco/'
@@ -20,7 +20,6 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.json',
 }
-
 
 export default function RootLayout({
   children,
@@ -32,7 +31,7 @@ export default function RootLayout({
       <Head>
         <meta charSet="utf-8" key="charset" />
         <meta name="copyright" content="© Copyright Santa Pipa 2023 - Todos los derechos reservados" />
-        <meta name="theme-color" content="#FFFFFF" />
+        <meta name="theme-color" content="#000000" />
       </Head>
       <body className={myFont.className}>
         <main id="top">
