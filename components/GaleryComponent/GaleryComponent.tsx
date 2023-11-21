@@ -14,12 +14,7 @@ export default function GaleryComponent({
 }: {
     imagesData: ImgDataInterface[] | undefined
 }) {
-    const [thumbsSwiper, setThumbsSwiper] = useState<null>(null);
-
-    const handleSwiper = (swiper: any) => {
-        setThumbsSwiper(swiper);
-    };
-
+    const [thumbsSwiper, setThumbsSwiper] = useState<any | null>(null);
     return (
         <>
             {imagesData &&
@@ -28,7 +23,7 @@ export default function GaleryComponent({
                         loop
                         spaceBetween={0}
                         thumbs={thumbsSwiper ? { swiper: thumbsSwiper } : undefined}
-                        modules={[FreeMode, Navigation, Thumbs]}
+                        modules={[Navigation, Thumbs]}
                         className="first-img-galery"
                     >
                         {imagesData.map((imageData: ImgDataInterface, index: number) => {
@@ -38,12 +33,11 @@ export default function GaleryComponent({
                         })}
                     </Swiper>
                     <Swiper
-                        onSwiper={handleSwiper}
+                        onSwiper={setThumbsSwiper}
                         spaceBetween={16}//16px = 1rem
                         slidesPerView={4}
-                        freeMode={true}
                         watchSlidesProgress={true}
-                        modules={[FreeMode, Navigation, Thumbs]}
+                        modules={[Navigation, Thumbs]}
                         className="second-img-galery"
                     >
                         {imagesData.map((imageData: ImgDataInterface, index: number) => {
