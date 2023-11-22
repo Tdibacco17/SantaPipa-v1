@@ -15,7 +15,7 @@
 
         @media (max-width:768px) {
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
             width: var(--max-width);
             max-width: var(--max-width);
             padding: 0;
@@ -23,9 +23,9 @@
         }
 
         .galery-container {
-            max-width: 55vw;
-            width: 55vw;
-            min-width: 55vw;
+            max-width: 50vw;
+            width: 50vw;
+            min-width: 50vw;
 
             @media (max-width:768px) {
                 max-width: 100%;

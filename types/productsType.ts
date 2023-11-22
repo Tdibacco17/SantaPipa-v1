@@ -20,5 +20,6 @@ export interface ProductInterface {
         // measures: string,
         description: string[],
         smallTitle: string
-    }
+    },
+    shareUrl: string
 }

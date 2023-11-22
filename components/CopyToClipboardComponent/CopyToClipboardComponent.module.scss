@@ -1,0 +1,38 @@
+.container-clipboard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.35rem;
+
+    .content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.35rem;
+        color: var(--tertiary-color);
+        text-transform: initial;
+        cursor: pointer;
+
+        .text {
+            height: 1.15rem;
+        }
+
+        &:hover {
+            .text {
+                border-bottom: 1px solid var(--secondary-color);
+                color: var(--secondary-color);
+            }
+        }
+    }
+
+    .popup {
+        position: relative;
+        font-size: var(--size-small);
+        color: var(--tertiary-color);
+        text-transform: initial;
+
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 0.4rem;
+        border-radius: 5px;
+    }
+}

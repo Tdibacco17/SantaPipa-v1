@@ -57,7 +57,8 @@ const productsData: ProductsDataInterface = {
                 "Espalda abierta y mangas largas acampanadas.",
             ],
             smallTitle: "New in"
-        }
+        },
+        shareUrl: "http://localhost:3000/products/vestido-amelia"
     },
     "vestido-siena": {
         productSlug: "vestido-siena",
@@ -103,7 +104,8 @@ const productsData: ProductsDataInterface = {
                 "Mangas largas medio acampanadas."
             ],
             smallTitle: "New in"
-        }
+        },
+        shareUrl: "http://localhost:3000/products/vestido-siena"
     },
     "pollera-antonia": {
         productSlug: "pollera-antonia",
@@ -149,7 +151,8 @@ const productsData: ProductsDataInterface = {
                 "Tiene un tajo en la parte trasera para mejor movilidad y un cierre."
             ],
             smallTitle: "New in"
-        }
+        },
+        shareUrl: "http://localhost:3000/products/pollera-antonia"
     },
     "blusa-pipa": {
         productSlug: "blusa-pipa",
@@ -159,12 +162,12 @@ const productsData: ProductsDataInterface = {
         isNewIn: true,
         image: {
             "imgSrc": "/assets/img/products/blusaPipa/blusaPipa.webp",
-            "imgAlt": "Top Pipa Img",
+            "imgAlt": "Blusa Pipa Img",
             "imgBlur": "data:image/svg+xml;base64,CiAgICAgICAgPHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA4IDUnPgogICAgICAgIDxmaWx0ZXIgaWQ9J2InIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0nc1JHQic+CiAgICAgICAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249JzEnLz4KICAgICAgICA8L2ZpbHRlcj4KICAgICAgICAgICAgPGltYWdlIHByZXNlcnZlQXNwZWN0UmF0aW89J25vbmUnIGZpbHRlcj0ndXJsKCNiKScgeD0nMCcgeT0nMCcgaGVpZ2h0PScxMDAlJyB3aWR0aD0nMTAwJScgaHJlZj0nZGF0YTppbWFnZS93ZWJwO2Jhc2U2NCwvOWovNEFBUVNrWkpSZ0FCQVFBQUFRQUJBQUQvMndDRUFBRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBZi9DQUJFSUFCZ0FFQU1CRVFBQ0VRRURFUUgveEFBd0FBQUJCUUFBQUFBQUFBQUFBQUFBQUFBRUJRY0lDUW9CQUFJREFRQUFBQUFBQUFBQUFBQUFBQUVHQUFJREIvL2FBQXdEQVFBQ0VBTVFBQUFBZnhTZjFzaXQ2VWtlYjV6MlBtaDgxLy9FQUNBUUFBSUNBd0FDQXdFQUFBQUFBQUFBQUFRRkF3WUJBZ2NJRWdrVUZTTC8yZ0FJQVFFQUFUOEFXcUtYV3AwQkkxT2dzTmhNWkFwVTZWZERYWUhEaHM5MnlHQ3VHbHN6TkVvaDIzay92Y3BrMENHSGoxM2trSTlzWTAzNkdpcUxqbWQyTFowR0pBM0FyVENNOUhZYTByQWZWNXlOdmtReFVkb1BEUEJna1luV2JYUXhjVWF1UGcyalBVSG5MQ3hDNXlQSkh3YTRoNUI4eFQ5N28zUzZoVW5jWkZnWGR3NFFleTN0L0dYcUJpRUpFN05vaXRhMWVYK3NXQU51YWpmcjYvN3VFb1UwaEVLR3dCR3Naa3UzYVBqKzZ0MUt3cnVQOTdDOG5MYlltOXh1RGgvYzZnMER0NXFrWVZITkM2L2VPV0poWmtDdUoyRlM0SzYwVUpuTmFab0dhajZqUUlEUnJQNVI3aHQ0RlprY3p0azFHeVpHQkpNNUlQOEFVZVdQUWhqRVpocE9YUGdPYUFIRzBlaXJFUm1ENHdwSmNTaFJreFo0WFpxeTBPY2RFbVVKS3ZmZncyOGJKalRRNHFNSFBnOWlETDdMMFZTSVdKMUJuMEJnVmJPUlF0WER1ZFE0aUR4aVdNWkU4bi8veEFBbEVRQURBQUlCQXdJSEFBQUFBQUFBQUFBQkFnTUVFaEVBQlNFVE1TSWpNa05TWVhILzJnQUlBUUlCQVQ4QUN5QUx1ZFZVY3N4QkkvRWVBcDhra0R3RDVJOStqT0xvU3VyY2o2a0lQOUE5aVAyQ09RZVFRT243YmxkeXdjc1k5MmtkNVJZQURiU2dvelZSblBwN3lNMVpGZFNHSjJES3lLSHh1MjUrSGpKUE94Nm1jT0lqS3I2ZkdReERFTXdRZ0xaK0dlcWFLb2YyOEZDM2JSUlhLeFdXaEJObEt2czZxRHFKNkhqZlpoc0tBcVplcnFWZlJobVNNNUlpVnM4RHFxenU1cTBtbk1mZWNtbEE1WXVvYy9KSHdKNFBYLy9FQUNJUkFBTUJBQUlDQWdJREFBQUFBQUFBQUFFQ0F3UUZFUklUQmlJaEkwRlJZdi9hQUFnQkF3RUJQd0NYdnM4NFowTkwxWXJLYXNxa2tBdXg4bllLcXFpczdFc0I0Zy96MEM1dkV0SzZQTjBQM1Npa0VmMGY5S1IweXVwS09oVjBKVmdUZytROGY4ZjV2amRHaklsM2ltalpGMnA0ekZvZXFhNXJJaSt3eTBwb3F0WG0zWW1yVE1xSlptbnpITzhOeW5KMzJjWnVrMXQvZTJtS1F0NVl3NkwyaU5SZnRsWHlWTWxBN2w0K1A1TEs0VGtyU29nYlEranpIUzVxVGVIaEtqT3JNZEpyMHdrVVJsUXhJb3VuME13ZVB0VTU5bnUwR3o1c2tOSDdXdGJIRmNzdFB2dVNDY3Nnc1lQSkZTTFBMdHRYUXJicHdxai8yUT09Jy8+CiAgICAgICAgPC9zdmc+CiAgICA=",
             "objPosition": "50% 50%",
             hoverImg: {
                 imgSrc: "/assets/img/products/blusaPipa/blusaPipa1.webp",
-                imgAlt: "Detalle Top Pipa Img",
+                imgAlt: "Detalle Blusa Pipa Img",
                 imgBlur: "data:image/svg+xml;base64,CiAgICAgICAgPHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA4IDUnPgogICAgICAgIDxmaWx0ZXIgaWQ9J2InIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0nc1JHQic+CiAgICAgICAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249JzEnLz4KICAgICAgICA8L2ZpbHRlcj4KICAgICAgICAgICAgPGltYWdlIHByZXNlcnZlQXNwZWN0UmF0aW89J25vbmUnIGZpbHRlcj0ndXJsKCNiKScgeD0nMCcgeT0nMCcgaGVpZ2h0PScxMDAlJyB3aWR0aD0nMTAwJScgaHJlZj0nZGF0YTppbWFnZS93ZWJwO2Jhc2U2NCwvOWovNEFBUVNrWkpSZ0FCQVFBQUFRQUJBQUQvMndDRUFBRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBZi9DQUJFSUFCZ0FFQU1CRVFBQ0VRRURFUUgveEFBdkFBQUNBd0FBQUFBQUFBQUFBQUFBQUFBR0J3Z0pDZ0VBQXdBREFBQUFBQUFBQUFBQUFBQUFBUVFGQWdZSC85b0FEQU1CQUFJUUF4QUFBQUIzNm4wQnhGTFBrNkN4cVJFN09aYXVuVy8veEFBZkVBQUNBd0FEQUFNQkFBQUFBQUFBQUFBRUJRTUdCd0VDQ0FrVEZCai8yZ0FJQVFFQUFUOEF5TCtHVnVnYUJuTkNzbEVqOUpVamtCY0Zqck85dnFVZ0dnYXFWem0xNlE4N3VXNFZEc1hXbG9tUUlvOVlYeHNyQXd1VmtROVhNU3dRa1JwSng1bk1VV0cySVNkRjJhdnlDcEtnMFRyMkQyQTN0M2dkd05TV1JvNGQycnJpUXROd1pGOUkwc0hFd1Fzc1hJY1UzMjlaSStQQ2plbFhuNVROd3BPNFlOUHNxdmVsR2wwc3pLZ0VDSy85dWpzRWVtVG5sSytIMVltUEtpSlQxYXlBOVdTRUt2bmNwMnhVakVtR0plS1d2eDRMZlNQazh5VVB0bWU0VTA3emY1OWJMVDg0M0d3WCtsdVFxQkExdjFXb1M1dTAwSlFTUzhDc2krM3FHNXA2em81ck43c2xJNWVqdTJUMnVGazlGWG5QWGZUWHNYaFg1cHN5cXNiU2ZIYTcycGZ1TkFjNVdJaEdwMWk1aFlXWWZRYTNHYmFxdllBKzFvVUFxWkt1RjNjRy91SzY5VGwwUXNzczVGQTlCK0x0QWt2bnNyMW5SUFFPdWI1Ukt3T21zY3Q1dnR1dVNHdDVlU2FOTFZpN1RxQTR0aGFJbGpHMzkrRXNTc1lOWEVaTzBQSVFLV3pNZ3h2L0FQL0VBQ1VSQUFNQUFnRUNCUVVBQUFBQUFBQUFBQUVDQXdRUkVnVWhBQVlURkNJak1qTlJnZi9hQUFnQkFnRUJQd0RQdzh5TWNZeWhZKzdyeG02Y3FCRVE3dFJ2dkNiMFFob09MSFkxMkpDUjViRGI3aGVQd1hmWWR6dmozL3AvWTdhSThlWThpOFBMc002SzNjNGpBTW1NS25KcjY3VTlNU1hHNU9ma2dCQlZob2docEVPSHdjb1U2TkZ3cUsxeEJxeFJGeHg2NG55bzljY0JTbVFObEtCbGJqbzZQY0V5Nm1PbllRYS80WFFZNUpYbVNiVGM4Q3Awcks2emRpeFljSFZHWDVNQ2o5WHhPcmsrd2laU3hYNHQ5QklGeGJaUm1FeTRMT1pXSVZtWnBxQWdvNkt2SC8vRUFDSVJBQU1CQUFFRkFBSURBQUFBQUFBQUFBRUNBd1FGQmhFU0V4UUFCeUl5VWYvYUFBZ0JBd0VCUHdEcDNaeDF0WElVMFBnb3ZGWkRldVhZNlJYUlNuYU1KVFFzaDBzcGIyMFdEZWFLb0pLdXllV25VaVAvQUFDOXlhRXFydUFvSlBZS3BjbFFCL1VmNTIvUDF2bjQ3UjF2djR2a2FaSXk1TERWNVgyZk9jVUg0ODV4WmJ0c0lsSkxKY2hibzgyVXlLdkhXS1RPZm5NdEo5VGFaczlmVmxPbE03MXMrOC9NOTJFSnczTjVpK1h3QXBOdzZzUVI1QWRuWDhsd2o4L3pGczJVa2FKcy9JS0EzclQxNUx4VjZHb0JZTWxkR2NKTUk0dEtsMW9CSkhTbHVuT1I2WUVoeTJsYjM1Q1QwbXYxMDBDZnlzaTJTWXFrejY1SnB5bzFrUkozZG1xWlJkMjh2Ly9aJy8+CiAgICAgICAgPC9zdmc+CiAgICA=",
                 objPosition: "50% 50%"
             }
@@ -191,11 +194,12 @@ const productsData: ProductsDataInterface = {
                 }
             ],
             description: [
-                "Top con frunces confeccionada en gasa marroquí blanca.",
+                "Blusa con frunces confeccionada en gasa marroquí blanca.",
                 "Se ata al cuello y persenta dos tiras que se entrelazan desde la parte frontal hasta la espalda dejándola descubierta."
             ],
             smallTitle: "New in"
-        }
+        },
+        shareUrl: "http://localhost:3000/products/blusa-pipa"
     },
     "vestido-santa-lucia": {
         productSlug: "vestido-santa-lucia",
@@ -241,7 +245,8 @@ const productsData: ProductsDataInterface = {
                 "Mangas largas y escote redondo caído. En conjunto viene con un pañuelo triangulo de la misma tela."
             ],
             smallTitle: "New in"
-        }
+        },
+        shareUrl: "http://localhost:3000/products/vestido-santa-lucia"
     },
     "top-antonia": {
         productSlug: "top-antonia",
@@ -287,7 +292,8 @@ const productsData: ProductsDataInterface = {
                 "A los costados contiene unos frunces chiquitos."
             ],
             smallTitle: "New in"
-        }
+        },
+        shareUrl: "http://localhost:3000/products/top-antonia"
     }
 }
 export default productsData

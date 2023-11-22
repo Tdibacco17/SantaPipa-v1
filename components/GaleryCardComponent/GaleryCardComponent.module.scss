@@ -1,9 +1,9 @@
 .container-outer-galery-img {
     --galery-card-width: 100%;
-    --galery-card-height: 65rem;
+    --galery-card-height: 60rem;
 
     @media (max-width:1400px) {
-        --galery-card-height: 55rem;
+        --galery-card-height: 50rem;
     }
 
     @media (max-width:1200px) {
