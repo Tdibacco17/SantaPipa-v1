@@ -227,7 +227,7 @@
             "networks": {
                 "whatsappDesktop": {
                     "name": "whatsapp",
-                    "title": "+54 911 5458 7688",
+                    "title": "+549 1154587688",
                     "link": "https://web.whatsapp.com/send?phone=5491154587688",
                     "icon": {
                         "path": [
@@ -241,7 +241,7 @@
                 },
                 "whatsappMobile": {
                     "name": "whatsapp",
-                    "title": "+54 911 5458 7688",
+                    "title": "+549 1154587688",
                     "link": "https://wa.me/5491154587688",
                     "icon": {
                         "path": [

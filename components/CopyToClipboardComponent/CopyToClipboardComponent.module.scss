@@ -4,6 +4,10 @@
     align-items: flex-end;
     gap: 0.35rem;
 
+    @media (max-width:325px) {
+        align-items: flex-start;
+    }
+
     .content {
         display: flex;
         justify-content: flex-start;
