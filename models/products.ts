@@ -58,7 +58,6 @@ const productsData: ProductsDataInterface = {
             ],
             smallTitle: "New in"
         },
-        shareUrl: "http://localhost:3000/products/vestido-amelia"
     },
     "vestido-siena": {
         productSlug: "vestido-siena",
@@ -105,7 +104,6 @@ const productsData: ProductsDataInterface = {
             ],
             smallTitle: "New in"
         },
-        shareUrl: "http://localhost:3000/products/vestido-siena"
     },
     "pollera-antonia": {
         productSlug: "pollera-antonia",
@@ -152,7 +150,6 @@ const productsData: ProductsDataInterface = {
             ],
             smallTitle: "New in"
         },
-        shareUrl: "http://localhost:3000/products/pollera-antonia"
     },
     "blusa-pipa": {
         productSlug: "blusa-pipa",
@@ -199,7 +196,6 @@ const productsData: ProductsDataInterface = {
             ],
             smallTitle: "New in"
         },
-        shareUrl: "http://localhost:3000/products/blusa-pipa"
     },
     "vestido-santa-lucia": {
         productSlug: "vestido-santa-lucia",
@@ -246,7 +242,6 @@ const productsData: ProductsDataInterface = {
             ],
             smallTitle: "New in"
         },
-        shareUrl: "http://localhost:3000/products/vestido-santa-lucia"
     },
     "top-antonia": {
         productSlug: "top-antonia",
@@ -293,7 +288,6 @@ const productsData: ProductsDataInterface = {
             ],
             smallTitle: "New in"
         },
-        shareUrl: "http://localhost:3000/products/top-antonia"
     }
 }
 export default productsData

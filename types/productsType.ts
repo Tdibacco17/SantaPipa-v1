@@ -21,5 +21,4 @@ export interface ProductInterface {
         description: string[],
         smallTitle: string
     },
-    shareUrl: string
 }

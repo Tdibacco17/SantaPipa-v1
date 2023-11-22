@@ -5,17 +5,17 @@ import { IconComponent } from '../IconComponent/IconComponent'
 import { useState } from 'react'
 export default function CopyToClipboardComponent({
     title,
-    shareUrl,
+    productSlug,
     icon
 }: {
     title: string,
-    shareUrl: string,
+    productSlug: string,
     icon: any
 }) {
     const [isCopied, setIsCopied] = useState<boolean>(false);
 
     const handleCopyClick = () => {
-        copyToClipboard(shareUrl);
+        copyToClipboard(`https://desarrollo-santa-pipa.vercel.app/products/${productSlug}`);
         setIsCopied(true);
 
         // Después de 2 segundos, reiniciar el estado

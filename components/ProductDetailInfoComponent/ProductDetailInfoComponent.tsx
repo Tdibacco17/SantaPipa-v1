@@ -80,7 +80,7 @@ export default function ProductDetailInfoComponent({
                     </div>
                     <CopyToClipboardComponent
                         title={data.productDetail.contact.share.title}
-                        shareUrl={productData.shareUrl}
+                        productSlug={productData.productSlug}
                         icon={data.productDetail.contact.share.icon}
                     />
                 </div>
