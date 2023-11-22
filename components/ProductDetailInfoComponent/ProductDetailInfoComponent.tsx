@@ -22,9 +22,7 @@ export default function ProductDetailInfoComponent({
                 <div className={styles["container-wrapper-payment"]}>
                     <div className={styles["container-payment"]}>
                         <p className={styles["title"]}>{data.productDetail.payment.title}</p>
-                        <p className={styles["method"]}>
-                            {data.productDetail.payment.method}
-                        </p>
+                        <p>{data.productDetail.payment.method}</p>
                     </div>
                 </div>
             </div>
