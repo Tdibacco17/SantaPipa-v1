@@ -30,7 +30,7 @@
 
     @media (max-width: 442px) {
         --about-height: 20rem;
-        --about-width: 45vw;
+        --about-width: calc(45vw - 0.5rem);
     }
 
     @media (max-width: 350px) {

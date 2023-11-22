@@ -3,6 +3,7 @@ import styles from './RelevantComponent.module.scss'
 import data from '@/models/es.json'
 import RelevantCardComponent from '../RelevantCardComponent/RelevantCardComponent'
 import Link from 'next/link'
+import TitleDecorationComponent from '../TitleDecorationComponent/TitleDecorationComponent'
 export default function RelevantComponent() {
     return (
         <section className={styles["container-section-relevant"]}>
@@ -16,10 +17,7 @@ export default function RelevantComponent() {
                 </div>
                 <div className={styles["container-info"]}>
                     <div>
-                        <p className={styles["small"]}>
-                            <span className={styles["line-decoration"]} />
-                            {data.homePage.relevant.smallTitle}
-                        </p>
+                        <TitleDecorationComponent text={data.homePage.relevant.smallTitle} colorType='primary' />
                         <p className={styles["title"]}>{data.homePage.relevant.title}</p>
                     </div>
                     {data.homePage.relevant.description.map((item: string, index: number) => {

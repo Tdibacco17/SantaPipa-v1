@@ -1,0 +1,132 @@
+.container-section-info-product-detail {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+
+
+    @media (max-width:1200px) {
+        gap: 2rem
+    }
+
+    @media (max-width:768px) {
+        gap: 3rem
+    }
+
+    .product-title {
+        font-weight: var(--weight-bold);
+        font-size: var(--size-giant);
+        text-transform: uppercase;
+
+        @media (max-width:1200px) {
+            font-size: var(--size-xbig);
+        }
+    }
+
+    .price {
+        font-weight: var(--weight-medium);
+        font-size: var(--size-xmedium);
+    }
+
+    .container-wrapper-payment {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-weight: var(--weight-medium);
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--tertiary-color);
+
+        .container-payment {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            font-size: var(--size-small);
+
+            .title {
+                color: var(--tertiary-color);
+            }
+
+            .method {
+                text-transform: uppercase;
+            }
+        }
+
+
+    }
+
+    .container-division {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--tertiary-color);
+        font-weight: var(--weight-medium);
+        color: var(--tertiary-color);
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: var(--size-xsmall);
+
+        .division-title {
+            text-transform: uppercase;
+            color: var(--secondary-color);
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .container-info-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        font-weight: var(--weight-medium);
+        text-transform: uppercase;
+
+        .container-network-data {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+
+            .content {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+                color: var(--tertiary-color);
+                text-transform: lowercase;
+
+                .text {
+                    height: 1.15rem;
+                }
+
+                &:hover {
+                    .text {
+                        border-bottom: 1px solid var(--secondary-color);
+                        color: var(--secondary-color);
+                    }
+                }
+
+                &.desktop {
+                    display: flex;
+
+                    @media (max-width:442px) {
+                        display: none;
+                    }
+                }
+
+                &.mobile {
+                    display: none;
+
+                    @media (max-width:442px) {
+                        display: flex;
+                    }
+                }
+            }
+
+            @media (max-width:442px) {
+                gap: 1.5rem;
+            }
+        }
+    }
+}

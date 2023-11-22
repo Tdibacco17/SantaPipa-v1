@@ -8,19 +8,29 @@
     .wrapper {
         width: 100%;
         max-width: 100%;
+        height: 100%;
         padding: 0 2rem;
+        display: flex;
+        gap: 2rem;
 
         @media (max-width:768px) {
+            display: flex;
+            flex-direction: column-reverse;
             width: var(--max-width);
             max-width: var(--max-width);
             padding: 0;
+            gap: 4rem;
         }
 
         .galery-container {
             max-width: 55vw;
+            width: 55vw;
+            min-width: 55vw;
 
             @media (max-width:768px) {
-                max-width: 100vw;
+                max-width: 100%;
+                width: 100%;
+                min-width: 100%;
             }
         }
     }

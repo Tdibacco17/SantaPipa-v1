@@ -6,7 +6,7 @@ export interface LinkIconInterface {
 export interface IconInterface {
     iconData: IconProps,
     size: "medium" | "big" | "small",
-    isClickable: () => void,
+    isClickable?: () => void,
     customNavFill?: string
 }
 export interface IconProps {
@@ -15,12 +15,13 @@ export interface IconProps {
     path: string[],
     isLink: boolean,
     hover: boolean
+    onlyDesktop?: boolean,
+    onlyMobile?: boolean,
 }
 export interface LinkIconProps extends IconProps {
     link: string,
     name: string,
-    onlyDesktop?: boolean,
-    onlyMobile?: boolean,
+    title?: string,
 }
 
 export interface NavigationProps {

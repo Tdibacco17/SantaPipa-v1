@@ -1,0 +1,22 @@
+.small {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: var(--size-xsmall);
+    font-weight: var(--weight-medium);
+    color: var(--tertiary-color);
+
+    .line-decoration {
+        width: 1.3rem;
+        height: 1px;
+        background-color: var(--tertiary-color);
+    }
+
+    &.secondary {
+        color: var(--primary-color);
+
+        .line-decoration {
+            background-color: var(--primary-color);
+        }
+    }
+}

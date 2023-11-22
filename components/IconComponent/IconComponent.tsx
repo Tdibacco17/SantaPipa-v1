@@ -27,7 +27,7 @@ const IconGenerate = ({ fill, viewBox, path, isNavTransition }: { fill: string, 
 
 export const IconComponent = ({ iconData, size, isClickable, customNavFill }: IconInterface) => {
     return (
-        <div onClick={isClickable} className={`${styles["container-section-icon"]} ${styles[size]} ${iconData.hover && styles["hover"]}`}>
+        <div onClick={isClickable ?? undefined} className={`${styles["container-section-icon"]} ${styles[size]} ${iconData.hover && styles["hover"]} ${iconData.onlyDesktop && styles["hidden-mobile"]} ${iconData.onlyMobile && styles["hidden-desktop"]}`}>
             {IconGenerate({
                 fill: customNavFill ? customNavFill : iconData.fill,
                 viewBox: iconData.viewBox,

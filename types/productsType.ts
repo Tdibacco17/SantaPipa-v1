@@ -19,5 +19,6 @@ export interface ProductInterface {
         imagesData: ImgDataInterface[]
         // measures: string,
         description: string[],
+        smallTitle: string
     }
 }

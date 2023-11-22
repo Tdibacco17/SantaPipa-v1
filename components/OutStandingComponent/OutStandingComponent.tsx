@@ -5,15 +5,13 @@ import { ProductInterface } from '@/types/productsType'
 import ProductCardComponent from '../ProductCardComponent/ProductCardComponent'
 import Link from 'next/link'
 import data from '@/models/es.json'
+import TitleDecorationComponent from '../TitleDecorationComponent/TitleDecorationComponent'
 export default function OutStandingComponent() {
     return (
         <section className={styles["container-section-OutStanding"]}>
             <div className={styles["wrapper"]}>
                 <div className={styles["container-info"]}>
-                    <p className={styles["small"]}>
-                        <span className={styles["line-decoration"]} />
-                        {data.homePage.outStanding.smallTitle}
-                    </p>
+                    <TitleDecorationComponent text= {data.homePage.outStanding.smallTitle} colorType='primary' />
                     <p className={styles["title"]}>
                         {data.homePage.outStanding.title.map((item: string, index: number) => {
                             return <span key={index}>{item}</span>

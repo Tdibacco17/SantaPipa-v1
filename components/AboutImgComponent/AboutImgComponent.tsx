@@ -3,16 +3,14 @@ import styles from './AboutImgComponent.module.scss'
 import data from '@/models/es.json'
 import AboutImgCardComponent from '../AboutImgCardComponent/AboutImgCardComponent'
 import Link from 'next/link'
+import TitleDecorationComponent from '../TitleDecorationComponent/TitleDecorationComponent'
 export default function AboutImgComponent() {
     return (
         <section className={styles["container-section-about"]}>
             <div className={styles["wrapper"]}>
                 <div className={styles["container-info"]}>
                     <div>
-                        <p className={styles["small"]}>
-                            <span className={styles["line-decoration"]} />
-                            {data.homePage.about.smallTitle}
-                        </p>
+                        <TitleDecorationComponent text={data.homePage.about.smallTitle} colorType='secondary' />
                         <p className={styles["title"]}>
                             {data.homePage.about.title.map((item: string, index: number) => {
                                 return <span key={index}>{item}</span>

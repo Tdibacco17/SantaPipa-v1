@@ -1,19 +1,20 @@
 .container-section-icon {
     cursor: pointer;
+    padding: 0.15rem;
 
     &.small {
-        height: 1.5rem;
-        width: 1.5rem;
+        height: 1.65rem;
+        width: 1.65rem;
     }
 
     &.medium {
-        height: 2rem;
-        width: 2rem;
+        height: 2.15rem;
+        width: 2.15rem;
     }
 
     &.big {
-        height: 2.5rem;
-        width: 2.5rem;
+        height: 2.65rem;
+        width: 2.65rem;
     }
 
     &.hidden-mobile {

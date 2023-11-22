@@ -6,7 +6,7 @@ const productsData: ProductsDataInterface = {
         title: "Vestido Amelia",
         price: "$65.000",
         offerPrice: "$55.000",
-        isNewIn: false,
+        isNewIn: true,
         image: {
             imgSrc: "/assets/img/homePage/outStanding/chica-azul-1.webp",
             imgAlt: "Vestido Amelia Img",
@@ -56,6 +56,7 @@ const productsData: ProductsDataInterface = {
                 "Vestido con escote confeccionado en lino negro.",
                 "Espalda abierta y mangas largas acampanadas.",
             ],
+            smallTitle: "New in"
         }
     },
     "vestido-siena": {
@@ -63,7 +64,7 @@ const productsData: ProductsDataInterface = {
         title: "Vestido siena",
         price: "$50.000",
         offerPrice: "$55.000",
-        isNewIn: false,
+        isNewIn: true,
         image: {
             "imgSrc": "/assets/img/homePage/outStanding/chica-negro-1.webp",
             "imgAlt": "Vestido siena Img",
@@ -101,6 +102,7 @@ const productsData: ProductsDataInterface = {
                 "Vestido con un gran escote confeccionado en gasa marroquí blanca.",
                 "Mangas largas medio acampanadas."
             ],
+            smallTitle: "New in"
         }
     },
     "pollera-antonia": {
@@ -146,6 +148,7 @@ const productsData: ProductsDataInterface = {
                 "Pollera larga tiro bajo confeccionada en modal viscoso azul marino.",
                 "Tiene un tajo en la parte trasera para mejor movilidad y un cierre."
             ],
+            smallTitle: "New in"
         }
     },
     "blusa-pipa": {
@@ -153,7 +156,7 @@ const productsData: ProductsDataInterface = {
         title: "Blusa Pipa",
         price: "$50.000",
         offerPrice: "$35.000",
-        isNewIn: false,
+        isNewIn: true,
         image: {
             "imgSrc": "/assets/img/products/blusaPipa/blusaPipa.webp",
             "imgAlt": "Top Pipa Img",
@@ -191,6 +194,7 @@ const productsData: ProductsDataInterface = {
                 "Top con frunces confeccionada en gasa marroquí blanca.",
                 "Se ata al cuello y persenta dos tiras que se entrelazan desde la parte frontal hasta la espalda dejándola descubierta."
             ],
+            smallTitle: "New in"
         }
     },
     "vestido-santa-lucia": {
@@ -236,6 +240,7 @@ const productsData: ProductsDataInterface = {
                 "Vestido largo confeccionado en un calado plano blanco.",
                 "Mangas largas y escote redondo caído. En conjunto viene con un pañuelo triangulo de la misma tela."
             ],
+            smallTitle: "New in"
         }
     },
     "top-antonia": {
@@ -243,7 +248,7 @@ const productsData: ProductsDataInterface = {
         title: "Top Antonia",
         price: "$50.000",
         offerPrice: "$25.000",
-        isNewIn: false,
+        isNewIn: true,
         image: {
             imgSrc: "/assets/img/products/topAntonia/TopAntonia.webp",
             imgAlt: "Top Antonia Img",
@@ -281,6 +286,7 @@ const productsData: ProductsDataInterface = {
                 "Crop top strapless al cuerpo con cierre y elástico en la parte superior, confeccionado en modal viscoso azul marino.",
                 "A los costados contiene unos frunces chiquitos."
             ],
+            smallTitle: "New in"
         }
     }
 }

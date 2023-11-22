@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div className={styles["container-section-home"]}>
       <BannerImgComponent />
-      <RelevantComponent />
-      <AboutImgComponent />
       <OutStandingComponent />
+      <AboutImgComponent />
+      <RelevantComponent />
       <ContactImgComponent />
     </div>
   )

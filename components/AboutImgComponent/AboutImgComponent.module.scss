@@ -62,20 +62,6 @@
             color: var(--primary-color);
             gap: 2rem;
 
-            .small {
-                display: flex;
-                align-items: center;
-                gap: 0.35rem;
-                font-size: var(--size-xsmall);
-                font-weight: var(--weight-medium);
-
-                .line-decoration {
-                    width: 1.3rem;
-                    height: 1px;
-                    background-color: var(--primary-color);
-                }
-            }
-
             .title {
                 font-weight: var(--weight-bold);
                 font-size: var(--size-giant);
