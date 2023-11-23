@@ -1,5 +1,5 @@
 .container-section-side-menu {
-    position: fixed;
+    position: absolute;
     top: 5rem;
     right: -100vw;
     z-index: 2;
@@ -55,10 +55,10 @@
     right: 0;
     min-width: 100vw;
     max-width: 100vw;
-    min-height: 100lvh;
-    height: 100lvh;
-    max-height: 100lvh;
-    // backdrop-filter: blur(25px);
-    // -webkit-backdrop-filter: blur(25px);
-    background-color: red;
+    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    background-color: transparent;
 }
