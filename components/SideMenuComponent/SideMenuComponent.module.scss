@@ -4,7 +4,8 @@
     right: -100vw;
     z-index: 2;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
     pointer-events: none;
     transition: right 0.35s ease-in-out;
     background-color: var(--primary-color);
@@ -30,6 +31,8 @@
         text-align: center;
         pointer-events: auto;
         width: 100%;
+        min-height: 100vh;
+        max-height: 100vh;
 
         .text {
             font-weight: var(--weight-medium);

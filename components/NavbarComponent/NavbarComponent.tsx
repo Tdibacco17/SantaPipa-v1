@@ -36,8 +36,8 @@ export default function NavbarComponent({
                         : <IconComponent isClickable={() => handleShowMenu()} iconData={data.NavbarComponent.closeIcon} size='medium'
                             customNavFill={navType === "primary" ? ((isAtTop && !showMenu) ? "primary" : "secondary") : "secondary"} />}
                 </div>
-                <SideMenuComponent showMenu={showMenu} handleShowMenu={() => handleShowMenu()} />
             </div>
+            <SideMenuComponent showMenu={showMenu} handleShowMenu={() => handleShowMenu()} />
         </section>
     )
 }
