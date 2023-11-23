@@ -13,16 +13,22 @@ export default function SideMenuComponent({
     showMenu && <div className={styles['container-overlay-menu-mobile']} />
 } */
     return (
-        <section className={`${styles["container-section-side-menu"]} ${showMenu && styles["active-menu"]}`}>
-            <div className={styles["container-titles-navigation"]}>
-                {Object.values(data.NavbarComponent.navigation).map((item: NavigationProps, index: number) => {
-                    return <Link onClick={handleShowMenu}
-                        key={index}
-                        href={item.link}>
-                        <span className={`${styles["text"]}`}>{item.title}</span>
-                    </Link>
-                })}
-            </div>
-        </section>
+        <>
+            {
+                showMenu && <div className={styles['container-overlay-menu-mobile']} />
+            }
+            <section className={`${styles["container-section-side-menu"]} ${showMenu && styles["active-menu"]}`}>
+                <div className={styles["container-titles-navigation"]}>
+                    {Object.values(data.NavbarComponent.navigation).map((item: NavigationProps, index: number) => {
+                        return <Link onClick={handleShowMenu}
+                            key={index}
+                            href={item.link}>
+                            <span className={`${styles["text"]}`}>{item.title}</span>
+                        </Link>
+                    })}
+                </div>
+            </section>
+        </>
+
     )
 }
