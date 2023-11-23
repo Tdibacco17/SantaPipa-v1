@@ -14,9 +14,6 @@ export default function SideMenuComponent({
 } */
     return (
         <>
-            {
-                showMenu && <div className={styles['container-overlay-menu-mobile']} />
-            }
             <section className={`${styles["container-section-side-menu"]} ${showMenu && styles["active-menu"]}`}>
                 <div className={styles["container-titles-navigation"]}>
                     {Object.values(data.NavbarComponent.navigation).map((item: NavigationProps, index: number) => {
@@ -29,6 +26,5 @@ export default function SideMenuComponent({
                 </div>
             </section>
         </>
-
     )
 }
