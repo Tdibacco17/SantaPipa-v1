@@ -3,6 +3,7 @@ import styles from './NavbarComponent.module.scss'
 import data from '@/models/es.json'
 import { NavigationProps } from '@/types'
 import { IconComponent } from '../IconComponent/IconComponent'
+import SideMenuComponent from '../SideMenuComponent/SideMenuComponent'
 export default function NavbarComponent({
     showMenu,
     handleShowMenu,
@@ -16,7 +17,7 @@ export default function NavbarComponent({
 }) {
 
     return (
-        <section className={`${styles["container-section-navbar"]} ${navType === "primary" && !isAtTop && styles["active"]} ${navType === "secondary" && styles["secondary"]}`}>
+        <section className={`${styles["container-section-navbar"]} ${navType === "primary" && !isAtTop && styles["active"]} ${navType === "secondary" && styles["secondary"]} ${showMenu && styles["active"]}`}>
             <div className={`${styles["wrapper"]} ${navType === "secondary" && styles["secondary"]}`}>
                 <Link onClick={() => handleShowMenu(true)} href={data.NavbarComponent.link} className={styles["logo-text"]}>
                     {data.NavbarComponent.title}
@@ -31,11 +32,12 @@ export default function NavbarComponent({
                 <div className={styles["container-mobile-icon"]}>
                     {!showMenu ?
                         <IconComponent isClickable={() => handleShowMenu()} iconData={data.NavbarComponent.burgerIcon} size='medium'
-                            customNavFill={navType === "primary" ? (isAtTop ? "primary" : "secondary") : "secondary"} />
+                            customNavFill={navType === "primary" ? ((isAtTop && !showMenu) ? "primary" : "secondary") : "secondary"} />
                         : <IconComponent isClickable={() => handleShowMenu()} iconData={data.NavbarComponent.closeIcon} size='medium'
-                            customNavFill={navType === "primary" ? (isAtTop ? "primary" : "secondary") : "secondary"} />}
+                            customNavFill={navType === "primary" ? ((isAtTop && !showMenu) ? "primary" : "secondary") : "secondary"} />}
                 </div>
             </div>
+            <SideMenuComponent showMenu={showMenu} handleShowMenu={() => handleShowMenu()}/>
         </section>
     )
 }

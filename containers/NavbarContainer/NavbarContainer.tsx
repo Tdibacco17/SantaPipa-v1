@@ -1,7 +1,8 @@
 'use client'
 import NavbarComponent from "@/components/NavbarComponent/NavbarComponent";
 import { useScrollPosition } from "@/utils/scroll/useScrollPosition";
-import { useState } from "react";
+import { useWindowSize } from "@/utils/size/useWindowSize";
+import { useEffect, useState } from "react";
 
 export default function NavbarContainer({ navType }: { navType: "primary" | "secondary" }) {
     const [showMenu, setShowMenu] = useState<boolean>(false)
@@ -13,7 +14,12 @@ export default function NavbarContainer({ navType }: { navType: "primary" | "sec
         }
     }
     const { isAtTop } = useScrollPosition();
-
+    const { width } = useWindowSize();
+    useEffect(() => {
+        if (width > 768) {
+            setShowMenu(false)
+        }
+    }, [width])
     return <NavbarComponent
         showMenu={showMenu}
         handleShowMenu={handleShowMenu}

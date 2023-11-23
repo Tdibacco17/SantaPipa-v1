@@ -11,7 +11,7 @@ export default function ProductDetailInfoComponent({
     productData: ProductInterface
 }) {
     return (
-        <div className={styles["container-section-info-product-detail"]}>
+        <section className={styles["container-section-info-product-detail"]}>
             <div className={styles["header-division"]}>
                 <div>
                     {productData.isNewIn &&
@@ -83,6 +83,6 @@ export default function ProductDetailInfoComponent({
                     />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

@@ -39,6 +39,15 @@
         background-color: var(--primary-color);
     }
 
+    &.active-side-menu {
+        display: none;
+
+        @media (max-width:768px) {
+            display: flex;
+            background-color: var(--primary-color);
+        }
+    }
+
     .wrapper {
         width: 100vw;
         display: flex;
