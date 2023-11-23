@@ -25,6 +25,7 @@ export default function OutStandingComponent() {
                 </div>
                 <div className={styles["container-carousel-mobile"]}>
                     <CarouselComponent productData={Object.values(productsData).slice(3, 6)} />
+                    <div className={styles["fix-zoom"]}/>
                 </div>
                 <Link href={data.homePage.outStanding.button.link} className='btn-secondary'>
                     {data.homePage.outStanding.button.title}
