@@ -22,7 +22,7 @@ export default function CampaignPage() {
                             />
                         </div>
                     })}
-                    d</div>
+                </div>
             </div>
         </div>
     )
