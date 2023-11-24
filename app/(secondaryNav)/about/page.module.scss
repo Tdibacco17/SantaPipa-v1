@@ -42,8 +42,10 @@
                 @media (max-width:544px) {
                     font-size: var(--size-xbig);
                 }
-                @media (max-width:300px) {
-                    font-size: var(--size-big);
+
+                @media (max-width:350px) {
+                    display: flex;
+                    flex-direction: column;
                 }
             }
 

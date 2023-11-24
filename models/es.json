@@ -283,7 +283,10 @@
         }
     },
     "aboutPage": {
-        "title": "Spring summer '24",
+        "title": [
+            "Spring ",
+            "summer '24"
+        ],
         "subtitle": "Oasis / Bohemian / Ephemeral",
         "images": [
             {
