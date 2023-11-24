@@ -12,6 +12,7 @@
     background-color: transparent;
     display: none;
     justify-content: center;
+    opacity: 0;
 
     @media (max-width:768px) {
         display: flex;
@@ -19,6 +20,7 @@
 
     &.active-menu {
         right: 0;
+        opacity: 1;
         transition: right 0.35s ease-in-out;
     }
 
