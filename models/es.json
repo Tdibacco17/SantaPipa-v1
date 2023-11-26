@@ -362,5 +362,43 @@
                 "objPosition": "50% 50%"
             }
         ]
+    },
+    "contactPage": {
+        "title": "Dejanos tu consulta",
+        "subtitle": "Nos pondremos en contacto dentro de las proximas 48hs",
+        "formData": {
+            "name": {
+                "label": "Nombre y Apellido",
+                "input": {
+                    "type": "text",
+                    "name": "name"
+                }
+            },
+            "phone": {
+                "label": "Teléfono",
+                "input": {
+                    "type": "text",
+                    "name": "phone"
+                }
+            },
+            "email": {
+                "label": "Email",
+                "input": {
+                    "type": "email",
+                    "name": "email"
+                }
+            },
+            "consultation": {
+                "label": "Consulta"
+            },
+            "placeholder": "Escribir aquí...",
+            "submit": {
+                "type": "submit",
+                "ariaLabel": "Enviar mensaje de contacto",
+                "text": "Enviar consulta",
+                "loading": "Cargando..",
+                "title": "Enviar consulta"
+            }
+        }
     }
 }

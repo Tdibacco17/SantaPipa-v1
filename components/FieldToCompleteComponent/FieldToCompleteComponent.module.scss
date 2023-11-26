@@ -1,0 +1,43 @@
+.wrapper-label {
+    display: flex;
+    flex-direction: column;
+
+    .text {
+        font-size: var(--size-medium);
+        font-weight: var(--weight-medium);
+
+        .required {
+            color: var(--tertiary-color);
+        }
+    }
+
+    .field {
+        min-width: 100%;
+    }
+
+    .area {
+        --width-area: 40rem;
+        min-height: 10rem;
+        max-height: 10rem;
+        height: 10rem;
+        width: var(--width-area);
+        min-width: var(--width-area);
+        max-width: var(--width-area);
+        outline: none;
+        border: 1px solid var(--tertiary-color);
+        padding: 0.5rem;
+
+        &:hover {
+            border: 1px solid var(--secondary-color);
+        }
+
+        &:focus {
+            border: 1px solid var(--secondary-color);
+        }
+
+        &::placeholder {
+            font-family: var(--font-myFont);
+            font-size: var(--size-small);
+        }
+    }
+}

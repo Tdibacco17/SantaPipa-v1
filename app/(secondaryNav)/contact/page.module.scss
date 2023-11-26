@@ -1,3 +1,35 @@
 .container-section-contact {
-    text-align: center;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 0;
+
+    .wrapper {
+        width: var(--max-width);
+        max-width: var(--max-width);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+
+        .container-header-titles {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .title {
+                font-weight: var(--weight-bold);
+                font-size: var(--size-xmedium);
+            }
+
+            .subtitle {
+                color: var(--tertiary-color);
+                font-weight: var(--weight-medium);
+                font-size: var(--size-xsmall);
+            }
+        }
+    }
 }

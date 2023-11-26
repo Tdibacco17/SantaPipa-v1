@@ -1,4 +1,6 @@
-export const templateContactHtml = () => {
+import { MessageDataInterface } from "@/types"
+
+export const templateContactHtml = (data: MessageDataInterface) => {
     return `
     <!DOCTYPE html>
     <html>

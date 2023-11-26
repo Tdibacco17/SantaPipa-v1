@@ -1,30 +1,28 @@
+import { FormRequestInterface } from "@/types";
 import { templateContactHtml } from "@/utils/email/templateContactHtml";
 import { NextResponse } from "next/server";
 const nodemailer = require("nodemailer");
 
-// interface FormRequestInterface { }
-
 export async function POST(req: Request) {
     try {
-        const body = (await req.json())/* as FormRequestInterface;*/
-        const contentHtml = templateContactHtml() //body.messageData pasarle datos a la funcion html
+        const body = (await req.json()) as FormRequestInterface;
+        const contentHtml = templateContactHtml(body.messageData)
 
         const transporter = nodemailer.createTransport({
             host: `${process.env.EMAIL_SERVICE}`,
             port: process.env.EMAIL_PORT,
             secure: true,
             auth: {
-                user: `${process.env.GMAIL_USSER}`,
+                user: `${process.env.GMAIL_USER}`,
                 pass: `${process.env.GMAIL_PASS}`
             }
         });
 
         const mailOptions = {
-            from: `SANTA PIPA ${process.env.GMAIL_USSER}`,
-            to: [`${process.env.GMAIL_USSER}`, body.messageData.email ?? null],
+            from: `SANTA PIPA ${process.env.GMAIL_USER}`,
+            to: [`${process.env.GMAIL_USER}`, body.messageData.email],
             subject: "Consulta de contacto",
-            // html: contentHtml,
-            text: "Hello world?"
+            html: contentHtml,
         };
 
         const server = await new Promise((resolve, reject) => {
