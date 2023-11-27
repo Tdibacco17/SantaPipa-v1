@@ -204,16 +204,11 @@
         "description": {
             "title": "Detalle del producto"
         },
-        "note": {
-            "title": "Nota",
-            "description": [
-                "Las prendas delicadas requieren atención especial. Opta por el lavado a mano con agua fria y utiliza un detergente suave para preservar la integridad de los tejidos.",
-                "Evita retorcerlas al escurrirlas y secalas al aire para mantener y prolongar su durabilidad. Siguiendo estos cuidados, tu ropa conservara su calidad pro más tiempo."
-            ]
-        },
         "measures": {
             "title": "Medidas",
-            "description": "Ofrecemos prendas en talla única, pero también brindamos la opción de confección a medida para adaptarnos a las necesidades individuales de nuestros clientes."
+            "description": [
+                "Ofrecemos prendas en talla única, pero también brindamos la opción de confección a medida para adaptarnos a las necesidades individuales de nuestros clientes."
+            ]
         },
         "shipments": {
             "title": "Envios",
@@ -223,7 +218,12 @@
             ]
         },
         "contact": {
-            "title": "Contactanos",
+            "title": "Comprar",
+            "subtitle": [
+                "Para realizar un pedido ",
+                "contactanos",
+                " a traves de nuestrar redes"
+            ],
             "networks": {
                 "whatsappDesktop": {
                     "name": "whatsapp",

@@ -5,6 +5,7 @@ import TitleDecorationComponent from '../TitleDecorationComponent/TitleDecoratio
 import { IconComponent } from '../IconComponent/IconComponent'
 import Link from 'next/link'
 import CopyToClipboardComponent from '../CopyToClipboardComponent/CopyToClipboardComponent'
+import DropdownContainer from '@/containers/DropdownContainer/DropdownContainer'
 export default function ProductDetailInfoComponent({
     productData
 }: {
@@ -15,7 +16,7 @@ export default function ProductDetailInfoComponent({
             <div className={styles["header-division"]}>
                 <div>
                     {productData.isNewIn &&
-                        <TitleDecorationComponent text={productData.details.smallTitle} colorType='primary' />}
+                        <TitleDecorationComponent text={productData.details.smallTitle} colorType='secondary' />}
                     <p className={styles["product-title"]}>{productData.title}</p>
                     <p className={styles["price"]}>{productData.offerPrice}</p>
                 </div>
@@ -26,38 +27,16 @@ export default function ProductDetailInfoComponent({
                     </div>
                 </div>
             </div>
-            <div className={styles["body-division"]}>
-                <div className={styles["container-division"]}>
-                    <p className={styles["division-title"]}>{data.productDetail.description.title}</p>
-                    <p className={styles["info"]}>
-                        {productData.details.description.map((item: string, index: number) => {
-                            return <span key={index}>{`- ${item}`}</span>
-                        })}
-                    </p>
-                </div>
-                <div className={styles["container-division"]}>
-                    <p className={styles["division-title"]}>{data.productDetail.measures.title}</p>
-                    <p>{`- ${data.productDetail.measures.description}`}</p>
-                </div>
-                <div className={styles["container-division"]}>
-                    <p className={styles["division-title"]}>{data.productDetail.shipments.title}</p>
-                    <p className={styles["info"]}>
-                        {data.productDetail.shipments.description.map((item: string, index: number) => {
-                            return <span key={index}>{`- ${item}`}</span>
-                        })}
-                    </p>
-                </div>
-            </div>
-            {/* <div className={styles["container-division"]}>
-                <p className={`${styles["division-title"]}`}>{data.productDetail.note.title}</p>
-                <p className={styles["info"]}>
-                    {data.productDetail.note.description.map((item: string, index: number) => {
-                        return <span key={index}>{item}</span>
-                    })}
-                </p>
-            </div> */}
+
             <div className={styles["footer-division"]}>
-                <p>{data.productDetail.contact.title}</p>
+                <div className={styles["wrapper-titles"]}>
+                    <p>{data.productDetail.contact.title}</p>
+                    <p>
+                        {data.productDetail.contact.subtitle.map((item: string, index: number) => {
+                            return <span className={`${styles["note"]} ${index === 1 && styles["bold"]}`} key={index}>{item}</span>
+                        })}
+                    </p>
+                </div>
                 <div className={styles["wrapper"]}>
                     <div className={styles["container-network-data"]}>
                         {Object.values(data.productDetail.contact.networks).map((item: any, index: number) => {
@@ -82,6 +61,13 @@ export default function ProductDetailInfoComponent({
                         icon={data.productDetail.contact.share.icon}
                     />
                 </div>
+            </div>
+
+            <div className={styles["body-division"]}>
+                <DropdownContainer dropdownData={data.productDetail.shipments} />
+                <DropdownContainer dropdownData={data.productDetail.description}
+                    descriptionData={productData.details.description} />
+                <DropdownContainer dropdownData={data.productDetail.measures} />
             </div>
         </section>
     )

@@ -71,3 +71,7 @@ export interface FieldProps {
         name: string
     }
 }
+export interface DropdownDataInterface {
+    title: string,
+    description?: string[]
+}

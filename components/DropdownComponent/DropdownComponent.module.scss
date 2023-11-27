@@ -1,0 +1,40 @@
+.container-division {
+    font-weight: var(--weight-medium);
+    color: var(--tertiary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: var(--size-xsmall);
+
+    .division-title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        color: var(--secondary-color);
+        padding: 0.3rem;
+        padding-left: 0;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        .title {
+            height: 1.15rem;
+            text-transform: uppercase;
+            color: var(--secondary-color);
+        }
+
+        .open {
+            font-size: var(--size-xmedium);
+        }
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--tertiary-color);
+    }
+}

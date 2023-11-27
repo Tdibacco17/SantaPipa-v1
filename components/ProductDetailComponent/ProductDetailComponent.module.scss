@@ -6,12 +6,17 @@
     padding: 8rem 0;
 
     .wrapper {
-        width: 100%;
-        max-width: 100%;
+        width: var(--max-width);
+        max-width: var(--max-width);
         height: 100%;
-        padding: 0 2rem;
         display: flex;
         gap: 2rem;
+
+        @media (max-width:1400px) {
+            width: 100vw;
+            max-width: 100vw;
+            padding: 0 2rem;
+        }
 
         @media (max-width:768px) {
             display: flex;
