@@ -31,10 +31,9 @@ export default function FormComponent({
                     <FieldToCompleteComponent btnSubmitClicked={btnSubmitClicked} errors={errors.phone} isTextAreaField={false} fieldProps={data.contactPage.formData.phone} valueRef={formValues.phone} handleChange={handleChange} />
                 </div>
                 <FieldToCompleteComponent btnSubmitClicked={btnSubmitClicked} errors={errors.consultation} isTextAreaField={true} fieldProps={data.contactPage.formData.consultation} valueRef={formValues.consultation} handleChange={handleChange} />
-                <button className={`btn-secondary`}
+                <button className="btn-secondary"
                     type='submit'
-                    disabled={loadingText}
-                    aria-label={data.contactPage.formData.submit.ariaLabel}>
+                    disabled={loadingText}>
                     {loadingText ?
                         data.contactPage.formData.submit.loading : data.contactPage.formData.submit.text}
                 </button>
