@@ -400,7 +400,7 @@
                 "type": "submit",
                 "ariaLabel": "Enviar mensaje de contacto",
                 "text": "Enviar consulta",
-                "loading": "Cargando..",
+                "loading": "Enviando..",
                 "title": "Enviar consulta"
             }
         }
