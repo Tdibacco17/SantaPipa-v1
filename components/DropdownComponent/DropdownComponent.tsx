@@ -12,8 +12,8 @@ export default function DropdownComponent({
     descriptionData?: string[]
 }) {
     return (
-        <div className={`${styles["container-division"]}`}>
-            <div onClick={handleOpenDropdown} className={`${styles["division-title"]}`}>
+        <div className={`${styles["container-division"]} ${isOpen && styles["isOpen"]}`}>
+            <div onClick={handleOpenDropdown} className={`${styles["division-title"]} ${!isOpen && styles["isOpen"]}`}>
                 <span className={styles["title"]}>{dropdownData.title}</span>
                 <span className={styles["open"]}>{isOpen ? "-" : "+"}</span>
             </div>
