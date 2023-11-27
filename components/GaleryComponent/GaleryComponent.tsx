@@ -27,7 +27,7 @@ export default function GaleryComponent({
             >
                 {imagesData.map((imageData: ImgDataInterface, index: number) => {
                     return <SwiperSlide key={index}>
-                        <GaleryCardComponent imageData={imageData} imgType="primary" />
+                        <GaleryCardComponent priority={true} imageData={imageData} imgType="primary" />
                     </SwiperSlide>
                 })}
             </Swiper>
@@ -41,7 +41,7 @@ export default function GaleryComponent({
             >
                 {imagesData.map((imageData: ImgDataInterface, index: number) => {
                     return <SwiperSlide key={index}>
-                        <GaleryCardComponent imageData={imageData} imgType="secondary" />
+                        <GaleryCardComponent priority={false} imageData={imageData} imgType="secondary" />
                     </SwiperSlide>
                 })}
             </Swiper>

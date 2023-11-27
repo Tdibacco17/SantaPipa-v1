@@ -3,10 +3,12 @@ import styles from './GaleryCardComponent.module.scss'
 import { ImgDataInterface } from '@/types'
 export default function GaleryCardComponent({
     imageData,
-    imgType
+    imgType,
+    priority
 }: {
     imageData: ImgDataInterface,
-    imgType: "primary" | "secondary"
+    imgType: "primary" | "secondary",
+    priority: boolean
 }) {
     return (
         <div className={`${styles["container-outer-galery-img"]} ${imgType === "secondary" && styles["secondary"]}`}>
@@ -14,7 +16,7 @@ export default function GaleryCardComponent({
                 src={imageData.imgSrc}
                 alt={imageData.imgAlt}
                 fill
-                priority
+                priority={priority}
                 placeholder='blur'
                 blurDataURL={imageData.imgBlur}
                 style={{ objectPosition: imageData.objPosition }}
