@@ -2,20 +2,23 @@ import { FormValuesInterface } from '@/types'
 import FieldToCompleteComponent from '../FieldToCompleteComponent/FieldToCompleteComponent'
 import styles from './FormComponent.module.scss'
 import data from '@/models/es.json'
+import ModalComponent from '../ModalComponent/ModalComponent'
 export default function FormComponent({
     formValues,
     loadingText,
     errors,
     handleSubmit,
     handleChange,
-    btnSubmitClicked
+    btnSubmitClicked,
+    isSuccessful
 }: {
     formValues: FormValuesInterface,
     loadingText: boolean,
     errors: FormValuesInterface,
     handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void,
     handleChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void,
-    btnSubmitClicked: boolean
+    btnSubmitClicked: boolean,
+    isSuccessful: boolean
 }) {
     return (
         <form onSubmit={handleSubmit} className={styles["container-section-form"]}>
@@ -36,6 +39,7 @@ export default function FormComponent({
                         data.contactPage.formData.submit.loading : data.contactPage.formData.submit.text}
                 </button>
             </div>
+            {isSuccessful && <ModalComponent />}
         </form>
     )
 }

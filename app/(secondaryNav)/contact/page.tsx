@@ -1,4 +1,4 @@
-import FormContainer from '@/containers/FormContainer'
+import FormContainer from '@/containers/FormContainer/FormContainer'
 import styles from './page.module.scss'
 import data from '@/models/es.json'
 export default function ContactPage() {

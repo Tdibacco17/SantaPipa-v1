@@ -43,6 +43,7 @@ const handleValidation = (formValues: FormValuesInterface) => {
 export default function FormContainer() {
     const router = useRouter()
     const [loadingText, setLoadingText] = useState<boolean>(false);
+    const [isSuccessful, setIsSuccessful] = useState<boolean>(false);
     const [btnSubmitClicked, setBtnSubmitClicked] = useState<boolean>(false);
     const [formValues, setFormValues] = useState<FormValuesInterface>({
         name: "",
@@ -97,8 +98,9 @@ export default function FormContainer() {
             const parseResponse = await response.json()
 
             if (parseResponse.status === 200) {
-                alert("Email enviado correctamente")
+                setIsSuccessful(true)
                 setTimeout(() => {
+                    setIsSuccessful(false)
                     setLoadingText(false);
                     setFormValues({
                         name: "",
@@ -131,5 +133,6 @@ export default function FormContainer() {
         errors={errors}
         handleSubmit={handleSubmit}
         btnSubmitClicked={btnSubmitClicked}
+        isSuccessful={isSuccessful}
     />
 }
