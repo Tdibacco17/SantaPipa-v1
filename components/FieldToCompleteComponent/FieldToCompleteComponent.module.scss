@@ -74,9 +74,11 @@
     }
 
     .error {
-        background-color: var(--danger-color);
+        background-color: var(--primary-danger-color);
         padding: 0.4rem;
         border-radius: 5px;
-        font-weight: var(--weight-regular);
+        color: var(--secondary-danger-color);
+        font-weight: var(--weight-medium);
+        border: 1px solid  #f8d4d4;;
     }
 }
