@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" translate="no">
+    <html lang="en">
       <Head>
         <meta charSet="utf-8" key="charset" />
         <meta name="copyright" content="© Copyright Santa Pipa 2023 - Todos los derechos reservados" />
