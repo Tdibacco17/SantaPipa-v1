@@ -20,6 +20,7 @@
         font-weight: var(--weight-regular);
         font-size: var(--size-small);
         color: var(--secondary-color);
+        border-radius: none;
 
         &:hover {
             border: 1px solid var(--secondary-color);
@@ -52,6 +53,7 @@
         font-weight: var(--weight-regular);
         font-size: var(--size-small);
         color: var(--secondary-color);
+        border-radius: none;
 
         &:hover {
             border: 1px solid var(--secondary-color);

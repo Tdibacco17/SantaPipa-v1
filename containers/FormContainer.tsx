@@ -14,10 +14,10 @@ const handleValidation = (formValues: FormValuesInterface) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const stringRegex = /^[a-zA-Z\s]+$/;
     if (!stringRegex.test(formValues.name.trim())) {
-        errors.name = "El nombre debe contener solo caracteres de texto."
+        errors.name = "El nombre debe contener solo caracteres de texto"
     }
     if (!formValues.email.trim() || !emailRegex.test(formValues.email)) {
-        errors.email = "Formato de correo electrónico no válido."
+        errors.email = "Formato de correo electrónico no válido"
     }
     if (formValues.phone && !(formValues.phone.length >= 8)) {
         errors.phone = "El número de teléfono no cumple con la longitud mínima"
@@ -26,16 +26,16 @@ const handleValidation = (formValues: FormValuesInterface) => {
         errors.phone = "Numero de teléfono tiene que ser solo caracteres numericos"
     }
     if (!formValues.name.trim()) {
-        errors.name = "Por favor, complete este campo."
+        errors.name = "Por favor, complete este campo"
     }
     if (!formValues.email.trim()) {
-        errors.email = "Por favor, complete este campo."
+        errors.email = "Por favor, complete este campo"
     }
     if (!formValues.phone.trim()) {
-        errors.phone = "Por favor, complete este campo."
+        errors.phone = "Por favor, complete este campo"
     }
     if (!formValues.consultation.trim()) {
-        errors.consultation = "Por favor, complete este campo."
+        errors.consultation = "Por favor, complete este campo"
     }
     return errors;
 };

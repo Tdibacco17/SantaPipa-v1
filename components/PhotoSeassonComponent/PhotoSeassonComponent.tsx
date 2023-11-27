@@ -11,7 +11,7 @@ export default function PhotoSeassonComponent({
 }) {
     const showImages = isView
         ? data.aboutPage.images
-        : data.aboutPage.images.slice(0, 8);
+        : data.aboutPage.images.slice(0, 5);
     return (
         <>
             <div className={styles["grid"]}>
