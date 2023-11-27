@@ -65,7 +65,7 @@
             width: var(--max-width);
             max-width: var(--max-width);
             padding: 0;
-            margin-right: -0.15rem; //padding icon
+            //padding icon
         }
 
         .logo-text {
@@ -109,6 +109,7 @@
 
         .container-mobile-icon {
             display: none;
+            padding-right: -0.15rem;
 
             @media (max-width:768px) {
                 display: flex;

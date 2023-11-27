@@ -1,9 +1,10 @@
 .wrapper-label {
     display: flex;
     flex-direction: column;
+    gap: 0.35rem;
 
     .text {
-        font-size: var(--size-medium);
+        font-size: var(--size-xsmall);
         font-weight: var(--weight-medium);
 
         .required {
@@ -13,6 +14,25 @@
 
     .field {
         min-width: 100%;
+        padding: 0.5rem 0.25rem;
+        outline: none;
+        border: 1px solid var(--secondary-hover);
+        font-weight: var(--weight-regular);
+        font-size: var(--size-small);
+        color: var(--secondary-color);
+
+        &:hover {
+            border: 1px solid var(--secondary-color);
+        }
+
+        &:focus {
+            border: 1px solid var(--secondary-color);
+        }
+
+        &::placeholder {
+            font-size: var(--size-small);
+            font-weight: var(--weight-regular);
+        }
     }
 
     .area {
@@ -25,7 +45,13 @@
         max-width: var(--width-area);
         outline: none;
         border: 1px solid var(--tertiary-color);
-        padding: 0.5rem;
+        padding: 0.5rem 0.25rem;
+        font-family: var(--font-myFont);
+        resize: none;
+        overflow-y: auto;
+        font-weight: var(--weight-regular);
+        font-size: var(--size-small);
+        color: var(--secondary-color);
 
         &:hover {
             border: 1px solid var(--secondary-color);
@@ -36,8 +62,19 @@
         }
 
         &::placeholder {
-            font-family: var(--font-myFont);
             font-size: var(--size-small);
+            font-weight: var(--weight-regular);
         }
+
+        @media (max-width:768px) {
+            --width-area: 90vw;
+        }
+    }
+
+    .error {
+        background-color: var(--danger-color);
+        padding: 0.4rem;
+        border-radius: 5px;
+        font-weight: var(--weight-regular);
     }
 }

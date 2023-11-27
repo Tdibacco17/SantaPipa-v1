@@ -17,7 +17,6 @@ export async function POST(req: Request) {
                 pass: `${process.env.GMAIL_PASS}`
             }
         });
-
         const mailOptions = {
             from: `SANTA PIPA ${process.env.GMAIL_USER}`,
             to: [`${process.env.GMAIL_USER}`, body.messageData.email],
@@ -38,6 +37,7 @@ export async function POST(req: Request) {
         }
 
         const success = await new Promise((resolve, reject) => {
+
             transporter.sendMail(mailOptions).then((info: any, err: any) => {
                 if (info.response.includes('250')) {
                     resolve(true)
@@ -45,6 +45,7 @@ export async function POST(req: Request) {
                 reject(err)
             })
         })
+
         if (!success) {
             return NextResponse.json({ message: "An error ocurred sending your email", status: 500 }, { status: 500 })
         }

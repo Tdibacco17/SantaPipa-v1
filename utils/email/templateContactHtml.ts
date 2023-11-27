@@ -11,6 +11,7 @@ export const templateContactHtml = (data: MessageDataInterface) => {
         </style>
     </head>
     <body>
+        <h6>funciona</h6>
     </body>
     </html>
     `

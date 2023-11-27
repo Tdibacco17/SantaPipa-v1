@@ -384,12 +384,16 @@
             "email": {
                 "label": "Email",
                 "input": {
-                    "type": "email",
+                    "type": "text",
                     "name": "email"
                 }
             },
             "consultation": {
-                "label": "Consulta"
+                "label": "Consulta",
+                "input": {
+                    "type": "text",
+                    "name": "consultation"
+                }
             },
             "placeholder": "Escribir aquí...",
             "submit": {

@@ -66,12 +66,19 @@ export interface MessageDataInterface {
 
 export interface FieldProps {
     label: string,
-    input?: {
+    input: {
         type: string,
-        name: string
+        name: string,
     }
 }
 export interface DropdownDataInterface {
     title: string,
     description?: string[]
+}
+
+export interface FormValuesInterface {
+    name: string,
+    email: string,
+    phone: string,
+    consultation: string
 }

@@ -5,12 +5,16 @@ export default function FieldToCompleteComponent({
     isTextAreaField,
     fieldProps,
     valueRef,
-    areaRef
+    errors,
+    handleChange,
+    btnSubmitClicked
 }: {
     isTextAreaField: boolean,
     fieldProps: FieldProps,
-    valueRef?: React.RefObject<HTMLInputElement>,
-    areaRef?: React.RefObject<HTMLTextAreaElement>,
+    valueRef?: string,
+    errors: string,
+    handleChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void,
+    btnSubmitClicked: boolean
 }) {
 
     if (isTextAreaField) {
@@ -18,10 +22,14 @@ export default function FieldToCompleteComponent({
             <label className={styles['wrapper-label']}>
                 <p className={styles['text']}>{fieldProps.label}<small className={styles["required"]}> *</small></p>
                 <textarea
-                    required
-                    ref={areaRef}
+                    // required
+                    name={fieldProps.input.name}
+                    value={valueRef}
                     className={styles['area']}
+                    onChange={handleChange}
                     placeholder={data.contactPage.formData.placeholder} />
+                {btnSubmitClicked && errors.length > 0 &&
+                    <small className={styles["error"]}>{errors}</small>}
             </label>
         )
     }
@@ -30,12 +38,15 @@ export default function FieldToCompleteComponent({
             <p className={styles['text']}>{fieldProps.label}<small className={styles["required"]}> *</small></p>
             <input
                 className={`${styles['field']}`}
-                required
-                type={fieldProps.input?.type}
-                name={fieldProps.input?.name}
-                ref={valueRef}
+                // required
+                type={fieldProps.input.type}
+                name={fieldProps.input.name}
+                value={valueRef}
+                onChange={handleChange}
                 placeholder={data.contactPage.formData.placeholder}
             />
+            {btnSubmitClicked && errors.length > 0 &&
+                <small className={styles["error"]}>{errors}</small>}
         </label>
     )
 }

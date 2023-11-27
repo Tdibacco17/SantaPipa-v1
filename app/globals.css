@@ -27,6 +27,7 @@
   --secondary-hover: rgb(0, 0, 0, 0.5);
   --tertiary-color: rgb(80, 80, 80);
   --bg-overlay: rgba(0, 0, 0, 0.4);
+  --danger-color: #ffe6e6;
 }
 
 * {
@@ -72,6 +73,8 @@ a {
   font-size: var(--size-small);
   font-weight: var(--weight-medium);
   color: var(--primary-color);
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .btn-primary:hover {
@@ -85,6 +88,8 @@ a {
   font-size: var(--size-small);
   font-weight: var(--weight-medium);
   color: var(--secondary-color);
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .btn-secondary:hover {
