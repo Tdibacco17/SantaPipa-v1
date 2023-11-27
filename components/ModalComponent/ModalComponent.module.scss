@@ -24,10 +24,10 @@
     .title {
         display: flex;
         flex-direction: column;
-        background-color: var(--success-color);
+        background-color: var(--primary-success-color);
         padding: 0.8rem 1.6rem;
         border-radius: 5px;
-        color: var(--secondary-color);
+        color: var(--secondary-success-color);
         border: 1px solid #4b9659;
         font-size: var(--size-small);
         font-weight: var(--weight-medium);

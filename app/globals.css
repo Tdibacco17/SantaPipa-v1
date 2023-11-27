@@ -28,8 +28,10 @@
   --tertiary-color: rgb(80, 80, 80);
   --bg-overlay: rgba(0, 0, 0, 0.4);
   --danger-color: #ffe6e6;
-  --success-color: #62c073;
+  --primary-success-color: #62c073;
+  --secondary-success-color: #0f2e18;
 }
+
 
 * {
   box-sizing: border-box;
