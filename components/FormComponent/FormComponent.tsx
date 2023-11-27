@@ -39,7 +39,7 @@ export default function FormComponent({
                         data.contactPage.formData.submit.loading : data.contactPage.formData.submit.text}
                 </button>
             </div>
-            {isSuccessful && <ModalComponent />}
+            {true && <ModalComponent />}
         </form>
     )
 }
