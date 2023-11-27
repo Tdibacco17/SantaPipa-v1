@@ -46,7 +46,7 @@ export default function ProductDetailInfoComponent({
                                     className={`${styles["content"]} ${item.icon.onlyDesktop && styles["desktop"]} ${item.icon.onlyMobile && styles["mobile"]}`}
                                     rel="noopener noreferrer"
                                     target="_blank"
-                                    aria-label={`Ir a ${item.name}`}
+                                    // aria-label={`Ir a ${item.name}`}
                                     href={item.link}
                                 >
                                     <IconComponent iconData={item.icon} size='small' />
