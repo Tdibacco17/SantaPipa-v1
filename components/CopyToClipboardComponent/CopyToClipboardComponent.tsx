@@ -27,9 +27,9 @@ export default function CopyToClipboardComponent({
     return (
         <div className={styles["container-clipboard"]}>
 
-            <div className={styles["content"]}>
+            <div onClick={handleCopyClick} className={styles["content"]}>
                 <IconComponent iconData={icon} size='small' />
-                <p className={styles["text"]} onClick={handleCopyClick}>{title}</p>
+                <p className={styles["text"]}>{title}</p>
             </div>
             {isCopied && (
                 <div className={styles["popup"]}>
