@@ -81,12 +81,14 @@ export const templateContactHtml = (data: MessageDataInterface) => {
                 font-weight: 700;
                 color: #000000;
                 font-size: 16px;
+                min-width: 80px;
             }
     
             .container-titles .subtitle {
                 color: #505050;
                 font-size: 14px;
                 word-break: break-all;
+                width: 100%;
             }
     
             .container-titles-column {
@@ -98,6 +100,7 @@ export const templateContactHtml = (data: MessageDataInterface) => {
             .container-titles-column .title {
                 font-weight: 700;
                 color: #000000;
+                min-width: 80px;
                 font-size: 16px;
             }
     
@@ -105,6 +108,7 @@ export const templateContactHtml = (data: MessageDataInterface) => {
                 color: #505050;
                 font-size: 14px;
                 word-break: break-all;
+                width: 100%;
             }
     
             .footer {
@@ -198,11 +202,11 @@ export const templateContactHtml = (data: MessageDataInterface) => {
                 <div class="line-divider"></div>
             </div>
             <div class="content">
-                <p class="container-titles">
+                <div class="container-titles">
                     <span class="title">Nombre: </span>
                     <span class="subtitle">${data.name}</span>
-                </p>
-                <p class="container-titles">
+                </div>
+                <div class="container-titles">
                     <span class="title">Teléfono: </span>
                     <a class="subtitle desktop" href="https://web.whatsapp.com/send?phone=${data.phone}">
                         <span class="link">${data.phone}</span>
@@ -210,19 +214,20 @@ export const templateContactHtml = (data: MessageDataInterface) => {
                     <a class="subtitle mobile" href="https://wa.me/${data.phone}">
                         <span class="link">${data.phone}</span>
                     </a>
-                </p>
-                <p class="container-titles">
+                </div>
+                <div class="container-titles">
                     <span class="title">Email: </span>
                     <a class="subtitle" href="mailto:${data.email}">
                         <span class="link">${data.email}</span></a>
-                </p>
-                <p class="container-titles-column">
+                </div>
+                <div class="container-titles-column">
                     <span class="title">Consulta: </span>
-                    <span class="subtitle">${data.consultation} Gracias por contactarnos.Gracias por contactarnos.Gracias por
+                    <span class="subtitle">${data.consultation} Gracias por contactarnos.Gracias por contactarnos.Gracias
+                        por
                         contactarnos.Gracias por contactarnos.Gracias por contactarnos.Gracias por contactarnos.Gracias por
                         contactarnos.Gracias por contactarnos.Gracias por contactarnos.Gracias por contactarnos.Gracias por
                         contactarnos.Gracias por contactarnos.</span>
-                </p>
+                </div>
             </div>
             <div class="footer">
                 <div class="container-all-icons">
@@ -275,5 +280,6 @@ export const templateContactHtml = (data: MessageDataInterface) => {
     </body>
     
     </html>
+    }
     `
 }
