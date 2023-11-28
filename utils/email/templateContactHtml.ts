@@ -280,6 +280,5 @@ export const templateContactHtml = (data: MessageDataInterface) => {
     </body>
     
     </html>
-    }
     `
 }
