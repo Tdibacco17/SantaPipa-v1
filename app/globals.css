@@ -74,6 +74,10 @@ input {
   border-radius: 0;
 }
 
+textarea {
+  border-radius: 0;
+}
+
 .btn-primary {
   padding: 1rem 1.75rem;
   border: 1px solid var(--primary-hover);
