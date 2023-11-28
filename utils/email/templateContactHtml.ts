@@ -78,7 +78,6 @@ export const templateContactHtml = (data: MessageDataInterface) => {
             }
     
             .container-titles .title {
-                font-size: 16px;
                 font-weight: 700;
                 color: #000000;
                 font-size: 16px;
@@ -97,7 +96,6 @@ export const templateContactHtml = (data: MessageDataInterface) => {
             }
     
             .container-titles-column .title {
-                font-size: 16px;
                 font-weight: 700;
                 color: #000000;
                 font-size: 16px;
@@ -202,7 +200,7 @@ export const templateContactHtml = (data: MessageDataInterface) => {
             <div class="content">
                 <p class="container-titles">
                     <span class="title">Nombre: </span>
-                    <span class="subtitle">${name}</span>
+                    <span class="subtitle">${data.name}</span>
                 </p>
                 <p class="container-titles">
                     <span class="title">Teléfono: </span>
