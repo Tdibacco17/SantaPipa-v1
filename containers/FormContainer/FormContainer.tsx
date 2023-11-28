@@ -121,7 +121,7 @@ export default function FormContainer() {
             console.log(parseResponse.message)
             return
         } catch (error) {
-            console.log("Entro al catch: ", error);
+            console.log("Catch error: ", error);
         }
         return;
     }

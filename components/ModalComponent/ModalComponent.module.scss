@@ -15,11 +15,7 @@
     user-select: none;
     pointer-events: none;
     padding-right: 2rem;
-    padding-bottom: 7rem;
-
-    @media (max-width:442px) {
-        padding-bottom: 9rem;
-    }
+    padding-bottom: 2rem;
 
     .title {
         display: flex;

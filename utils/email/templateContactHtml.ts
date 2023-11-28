@@ -22,10 +22,6 @@ export const templateContactHtml = (data: MessageDataInterface) => {
                 margin: 0 auto;
                 margin-top: 50px;
                 padding: 30px;
-                border: 1px solid rgb(182, 182, 182);
-                border-radius: 10px;
-                background-color: rgba(182, 182, 182, 0.04);
-                box-shadow: 7px 7px 10px rgba(0, 0, 0, .5)
             }
     
             .header {
