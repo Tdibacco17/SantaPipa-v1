@@ -17,6 +17,14 @@
     padding-right: 2rem;
     padding-bottom: 2rem;
 
+    @media (max-width:442px) {
+        padding-right: revert;
+        padding-bottom: revert;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 6rem;
+    }
+
     .title {
         display: flex;
         flex-direction: column;

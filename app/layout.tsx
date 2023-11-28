@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'SANTA PIPA',
   description: 'Tienda de ropa',
   applicationName: 'Santa Pipa',
-  viewport: 'width=device-width, initial-scale=1',
+  viewport: 'width=device-width, initial-scale=1, user-scalable=0',
   colorScheme: 'light',
   themeColor: '#FFFFFF',
   authors: {

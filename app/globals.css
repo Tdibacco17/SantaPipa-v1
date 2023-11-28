@@ -28,7 +28,7 @@
   --tertiary-color: rgb(80, 80, 80);
   --bg-overlay: rgba(0, 0, 0, 0.4);
   --primary-danger-color: #ffe6e6;
-  --secondary-danger-color:  #6e2323;
+  --secondary-danger-color: #6e2323;
   --primary-success-color: #62c073;
   --secondary-success-color: #0f2e18;
 }
@@ -68,6 +68,10 @@ body::-webkit-scrollbar {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+input {
+  border-radius: 0;
 }
 
 .btn-primary {
